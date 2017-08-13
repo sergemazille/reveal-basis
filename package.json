@@ -5,7 +5,7 @@
     "main": "dist/reveal-basis.min.js",
     "scripts": {
         "start": "webpack-dev-server -d --watch",
-        "deploy": "webpack -p"
+        "build": "webpack -p"
     },
     "repository": {
         "type": "git",
