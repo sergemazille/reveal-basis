@@ -1,0 +1,116 @@
+.above {
+
+
+    // sliding animations
+    // ==================
+
+    &.above-top, &.above-right, &.above-bottom, &.above-left {
+        display: block;
+    }
+
+    &.above-top, &.above-bottom {
+        transition: top $above-transition-duration $above-transition-timing-function, visibility 0s $above-transition-duration, opacity 0s $above-transition-duration; // visibility and opacity toggle are delayed after 'above' element has been hidden
+        opacity: 0; // avoid scale artifact on page reload
+        will-change: top, opacity, visibility;
+
+        &.is-visible {
+            top: 50vh;
+            opacity: 1;
+            transition: top $above-transition-duration $above-transition-timing-function;
+            will-change: top, opacity;
+        }
+    }
+
+    &.above-right, &.above-left {
+        transition: left $above-transition-duration $above-transition-timing-function, visibility 0s $above-transition-duration, opacity 0s $above-transition-duration; // visibility and opacity toggle are delayed after 'above' element has been hidden
+        opacity: 0; // avoid scale artifact on page reload
+        will-change: left, opacity, visibility;
+
+        &.is-visible {
+            left: 50vw;
+            opacity: 1;
+            transition: left $above-transition-duration $above-transition-timing-function;
+            will-change: left, opacity;
+        }
+    }
+
+    // starting positions
+    &.above-top { top: calc(-100vh - 50%); }
+    &.above-right { left: calc(100vw + 50%); }
+    &.above-bottom { top: calc(100vh + 50%); }
+    &.above-left { left: calc(-100vw - 50%); }
+
+
+    // scale animation
+    // ===============
+
+    &.above-scale {
+        display: block;
+
+        transform: perspective(1px) translate(-50%,-50%) scale(0);
+        opacity: 0; // avoid scale artifact on page reload
+        transition: transform $above-transition-duration $above-transition-timing-function, visibility 0s $above-transition-duration, opacity 0s $above-transition-duration; // visibility and opacity toggle are delayed after 'above' element has been hidden
+        will-change: transform, opacity, visibility;
+
+        &.is-visible {
+            transform: perspective(1px) translate(-50%,-50%) scale(1);
+            opacity: 1;
+            transition: transform $above-transition-duration $above-transition-timing-function;
+            will-change: transform, opacity;
+        }
+    }
+
+
+    // drawer type
+    // ===========
+
+    &.above-drawer {
+
+        $offset: calc((100% - #{$above-drawer-dimension}) / 2 );
+
+        &.above-right {
+            width: $above-drawer-dimension;
+
+            &.is-visible {
+                left: calc(50vw + #{$offset} - #{$above-padding});
+            }
+        }
+
+        &.above-left {
+            width: $above-drawer-dimension;
+
+            &.is-visible {
+                left: calc(50vw - #{$offset} + #{$above-padding});
+            }
+        }
+
+
+        &.above-bottom {
+            height: $above-drawer-dimension;
+
+            &.is-visible {
+                top: calc(50vh + #{$offset} - #{$above-padding});
+            }
+        }
+
+        &.above-top {
+            height: $above-drawer-dimension;
+
+            &.is-visible {
+                top: calc(50vh - #{$offset} + #{$above-padding});
+            }
+        }
+    }
+
+
+    // modal type
+    // ==========
+
+    &.above-modal {
+        display: block;
+
+        width: 50vw;
+        height: auto;
+        max-height: 50vh;
+    }
+}

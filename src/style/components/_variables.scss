@@ -1,0 +1,35 @@
+/*
+* sensible defaults (does not override already defined values)
+*/
+
+// global
+$box-shadow: 3px 3px 3px rgba(0,0,0,.3) !default;
+
+// overlay
+$overlay-background-color: #000 !default;
+$overlay-transition-duration: .3s !default;
+$overlay-opacity: .6 !default;
+$overlay-z-index: 10 !default;
+
+// above
+$above-padding: 24px !default;
+$above-background-color: #fff !default;
+$above-transition-duration: .3s !default;
+$above-transition-timing-function: ease-in-out !default;
+$above-drawer-dimension: 70% !default;
+
+// notification
+$notifications-container-padding: 12px !default;
+$notifications-container-top: 0 !default;
+
+$notification-transition-duration: .3s !default;
+$notification-transition-timing-function: ease-in-out !default;
+
+// drop
+$drop-distance: 1rem !default;
+$drop-z-index: 1 !default;
+
+// spinner
+$spinner-color: #fff !default;
+$spinner-speed: 1.35s !default;
+$spinner-animation-name: loading !default; // animation name cannot be enclosed in quotes

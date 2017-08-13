@@ -1,0 +1,22 @@
+.above {
+    display: none;
+    visibility: hidden;
+
+    padding: $above-padding;
+    width: calc(100vw - (#{$above-padding} * 2));
+    max-width: 100%; // scrollbar isn't included
+    height: calc(100vh - (#{$above-padding} * 2));
+
+    position: fixed;
+    z-index: $overlay-z-index + 1;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+
+    overflow: auto;
+
+    &.is-visible {
+        display: block;
+        visibility: visible;
+    }
+}

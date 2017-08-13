@@ -1,0 +1,44 @@
+// themes examples
+// ===============
+
+@mixin notification-alert-common {
+    margin-bottom: 12px;
+    border-radius: 5px;
+    padding: 1.25em;
+    box-shadow: $box-shadow;
+    color: #fff;
+
+    .dismiss {
+        padding-left: .75rem;
+        cursor: pointer;
+
+        // add a 'x' character
+        &::before {
+            content: '\00d7';
+        }
+    }
+}
+
+
+// alert themes
+// ============
+
+.notification-success {
+    @include notification-alert-common;
+    background-color: #0a0;
+}
+
+.notification-error, .notification-danger {
+    @include notification-alert-common;
+    background-color: #f00;
+}
+
+.notification-warning {
+    @include notification-alert-common;
+    background-color: #fb0;
+}
+
+.notification-info {
+    @include notification-alert-common;
+    background-color: #07f;
+}

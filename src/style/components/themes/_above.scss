@@ -1,0 +1,47 @@
+// themes examples
+// ===============
+
+// global style
+.above {
+    background: $above-background-color;
+}
+
+@mixin above-theme-common {
+    box-shadow: $box-shadow;
+
+    .dismiss {
+        float: right;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-decoration: none;
+        text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+    }
+}
+
+.above-light {
+    @include above-theme-common;
+    background: #d8eee8;
+    color: #002347;
+
+    .dismiss {
+        color: #5593dd;
+    }
+}
+
+.above-dark {
+    @include above-theme-common;
+    background: #041a26;
+    color: #fff;
+}
+
+
+// larger modal, positioned on 1/4th of the screen when visible
+.above-modal.above-custom {
+    width: 70%;
+    background: #fff;
+    color: #000;
+
+    &.is-visible {
+        top: calc(100% / 4);
+    }
+}

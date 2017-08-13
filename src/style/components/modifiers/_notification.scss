@@ -1,0 +1,40 @@
+.notification {
+
+    // animation
+    @mixin notification-animation($direction: "left") {
+
+        align-self: flex-start;
+
+        @if $direction == "right" { align-self: flex-end; } // override default
+
+        #{$direction}: calc(-100% - #{$notifications-container-padding});
+        opacity: 0;
+
+        transition: #{$direction} $notification-transition-duration $notification-transition-timing-function,
+        opacity $notification-transition-duration $notification-transition-timing-function,
+        visibility 0s $notification-transition-duration; // visibility toggle is delayed after element has been hidden
+        will-change: #{$direction}, opacity, visibility;
+
+        &.is-visible {
+            #{$direction}: 0;
+            opacity: 1;
+
+            transition: #{$direction} $notification-transition-duration $notification-transition-timing-function,
+            opacity $notification-transition-duration $notification-transition-timing-function;
+            will-change: #{$direction}, opacity;
+        }
+    }
+
+    &.notification-left, &.notification-right {
+        display: block;
+        position: relative;
+    }
+
+    &.notification-left {
+        @include notification-animation("left");
+    }
+
+    &.notification-right {
+        @include notification-animation("right");
+    }
+}

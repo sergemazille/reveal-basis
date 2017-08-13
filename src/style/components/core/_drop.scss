@@ -1,0 +1,14 @@
+.drop {
+    padding-top: $drop-distance;
+
+    display: none;
+    visibility: hidden;
+
+    position: absolute;
+    z-index: $drop-z-index;
+
+    &.is-visible {
+        display: block;
+        visibility: visible;
+    }
+}

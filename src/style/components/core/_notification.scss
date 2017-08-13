@@ -1,0 +1,25 @@
+.notifications {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: $overlay-z-index + 2;
+    top: $notifications-container-top;
+    left: 0;
+
+    width: calc(100% - #{$notifications-container-padding} * 2);
+    padding: $notifications-container-padding;
+
+    pointer-events: none; // because element needs to be on high z-index and would otherwise intercept clicks
+}
+
+.notification {
+    display: none;
+    visibility: hidden;
+
+    pointer-events: auto; // override parent's behaviour
+
+    &.is-visible {
+        display: block;
+        visibility: visible;
+    }
+}

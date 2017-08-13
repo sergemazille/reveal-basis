@@ -1,0 +1,20 @@
+#overlay {
+    width: 100vw;
+    max-width: 100%; // scrollbar is excluded
+    height: 100vh;
+
+    position: fixed;
+    z-index: -1; // starts off underneath every other elements
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    background-color: $overlay-background-color;
+    transition: opacity $overlay-transition-duration ease-in-out, z-index 0s $overlay-transition-duration;
+
+    &.is-visible {
+        z-index: $overlay-z-index;
+        opacity: $overlay-opacity;
+        transition: opacity $overlay-transition-duration ease-in-out;
+    }
+}

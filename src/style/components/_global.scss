@@ -1,0 +1,9 @@
+body {
+    &.is-locked {
+        overflow: hidden;
+    }
+}
+
+.lock-cursor {
+    cursor: not-allowed;
+}
