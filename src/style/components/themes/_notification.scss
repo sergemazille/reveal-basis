@@ -1,6 +1,11 @@
 // themes examples
 // ===============
 
+// global style
+.notification {
+    background: $notification-background-color;
+}
+
 @mixin notification-alert-common {
     margin-bottom: 12px;
     border-radius: 5px;
