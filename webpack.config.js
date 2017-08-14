@@ -6,7 +6,8 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, `${outputDir}`),
         filename: 'reveal-basis.min.js',
-        library: 'rb'
+        library: 'rb',
+        libraryTarget: 'umd'
     },
     module: {
         rules: [
