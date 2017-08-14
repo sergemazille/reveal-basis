@@ -14,7 +14,7 @@ export class Notification {
         // options defaults
         message = "",
         classes = [],
-        direction = "left",
+        position = "left",
         duration = 0,
         dismissible = true
     }) {
@@ -22,7 +22,7 @@ export class Notification {
         // set up notification
         let newNotification = document.createElement('div');
         newNotification.innerHTML = message;
-        newNotification.classList.add('notification', `notification-${direction}`);
+        newNotification.classList.add('notification', `notification-${position}`);
 
         // add custom classes
         [...classes].forEach(function(className) {
