@@ -49,6 +49,15 @@ reveal.notification.create({
 
 ```
 
+#### Override default styles
+
+One of the advantages of installing Reveal Basis via NPM is that you can change library style defaults with Sass.
+
+You can find all the variables names used by the library in `node_modules/reveal-basis/src/style/components/_variables.scss` file.
+
+To override those values, just redeclare them in your own sass build process, [as you would do with Bootstrap variables](https://getbootstrap.com/docs/4.0/getting-started/options/) for example.
+
+
 ### Note on installation
 
 You shouldn't use both `<script>` **and** `npm install` in your project as it will initialize `spinner` and `overlay` elements twice.
@@ -57,50 +66,59 @@ You shouldn't use both `<script>` **and** `npm install` in your project as it wi
 
 ### Above
 
-`above` component's purpose is to display an element above the current page content.
-
-Typical usage would be the creation of a modal dialog box or a drawer type sliding menu for example.
+`above` component's purpose is to display an element above the current page content (imagine a modal dialog box or a drawer type sliding menu).
 
 #### Usage
 
-The triggering element needs to contain `data-toggle="above"`.
-An eventual closing element needs to have `.dismiss` class and to be inside the `above` element.
+The triggering element needs to contain `data-toggle="above"` attribute.
 
-- Trigger an `.above` with a button through a [data-target] attribute:
+An eventual closing element needs to have the `.dismiss` class and to be inside the `.above` element.
+
+- Trigger an `.above` with a button, through a `[data-target]` attribute:
 ```html
-<button data-target="#targeted-above" data-toggle="above">Open</button>
+<!-- this button will toggle an '.above' element which 'id' is 'targeted-above' -->
+<button data-toggle="above" data-target="#targeted-above">Open</button>
+
+<!-- this is the '.above' element that will be triggered -->
 <div id="targeted-above" class="above">
     Lorem ipsum dolor sit amet...
     <button class="dismiss">Close</button>
 </div>
 ```
 
-- Trigger an `.above` with an anchor `<a>` through a [href] attribute:
+- Trigger an `.above` with an anchor `<a>` through a `[href]` attribute:
 ```html
-<a href="#targeted-above" data-toggle="above">Open</a>
+<!-- this anchor tag will toggle an '.above' element which 'id' is 'targeted-above' -->
+<a data-toggle="above" href="#targeted-above">Open</a>
+
+<!-- this is the '.above' element that will be triggered -->
 <div id="targeted-above" class="above">
     Lorem ipsum dolor sit amet...
     <button class="dismiss">Close</button>
 </div>
 ```
 
-- Trigger an `.above` with a button inside an '.above-group' element (no need for a [data-target] attribute):
+- Trigger an `.above` with a button inside an '.above-group' element:
 ```html
 <div class="above-group">
+
+    <!-- trigger and '.above' are enclosed by an '.above-group' element,
+    no need for a [data-target] or a [href] attributes here -->
     <button data-toggle="above">Open</button>
     <div class="above">
         Lorem ipsum dolor sit amet...
         <button class="dismiss">Close</button>
     </div>
+    
 </div>
 ```
 
 #### Modifiers
-Default `above` behaviour can be extended by adding some classes:
+Default `.above` behaviour can be extended by adding some classes:
 
-- transition directions:
+- Transitions:
 
-Instead of just popping above current page content, an `above` element can slide from/to a side of the view. 
+Instead of just popping above current page content, an `above` element can slide from a side of the view. 
 
 Reveal Basis UI Kit supplied classes are `.above-top`, `.above-right`, `.above-bottom`, `.above-left`:
 
@@ -111,9 +129,9 @@ There is also an `.above-scale` modifier:
 
 `<div class="above above-scale">`
 
-- modal:
+- Modal dialog box:
 
-The `.above-modal` class constrains the `above` element to the center of the view (horizontally and vertically).
+The `.above-modal` class constrains the `.above` element to the center of the view (horizontally and vertically).
 Its dimensions are shrinked to half its width by default but this behaviour can easily be customized:
 
 `<div class="above above-top above-modal above-custom">`
@@ -130,6 +148,8 @@ Its dimensions are shrinked to half its width by default but this behaviour can 
 ```
 
 #### Note:
+If you are using Reveal Basis library via NPM, you can 
+
 Global padding of `above` component has to be explicitly given through `$above-padding` variable in `_customization.scss` file as it is needed for positioning calculation.
 
 The visibility state modifier class for an `above` element is `.is-visible`.
