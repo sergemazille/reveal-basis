@@ -55,8 +55,31 @@ One of the advantages of installing Reveal Basis via NPM is that you can change 
 
 You can find all the variables names used by the library in `node_modules/reveal-basis/src/style/components/_variables.scss` file.
 
-To override those values, just redeclare them in your own sass build process, [as you would do with Bootstrap variables](https://getbootstrap.com/docs/4.0/getting-started/options/) for example.
+As the sass keyword `!default` is used, you can override those values within your own sass build process, [as you would do with Bootstrap variables](https://getbootstrap.com/docs/4.0/getting-started/options/) for example.
 
+Let's see an example:
+
+```scss
+// _myOwnVariables.scss
+$overlay-background-color: red;
+```
+
+```scss
+// main.scss
+@import 'myOwnVariables'; // import your custom file first
+@import '~reveal-basis/src/style/components/_variables.scss'; // the `~` stands for the node_modules folder
+
+```
+
+And now you can display your beautiful red overlay:
+
+```typescript
+// script.js
+import * as reveal from 'reveal-basis';
+
+reveal.overlay.show();
+
+```
 
 ### Note on installation
 
