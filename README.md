@@ -2,6 +2,8 @@
 
 Reveal Basis is a 'no dependencies' UI Kit which provides a set of tools to ease the front end developer job.
 
+It aims to help with DOM elements that have to be shown/hidden like spinner, modals, notifications, etc.
+
 ## Installation
 
 ### Regular `<script>` tag
@@ -53,9 +55,9 @@ reveal.notification.create({
 
 One of the advantages of installing Reveal Basis via NPM is that you can change library style defaults with Sass.
 
-You can find all the variables names used by the library in `node_modules/reveal-basis/src/style/components/_variables.scss` file.
+You can find all the variables names used by the library in the `node_modules/reveal-basis/src/style/components/_variables.scss` file.
 
-As the sass keyword `!default` is used, you can override those values within your own sass build process, [as you would do with Bootstrap variables](https://getbootstrap.com/docs/4.0/getting-started/options/) for example.
+As the Sass keyword `!default` is used, you can override those values within your own Sass build process, [as you would do with Bootstrap variables](https://getbootstrap.com/docs/4.0/getting-started/options/) for example.
 
 Let's see an example:
 
@@ -93,9 +95,9 @@ You shouldn't use both `<script>` **and** `npm install` in your project as it wi
 
 #### Usage
 
-The triggering element needs to contain `data-toggle="above"` attribute.
+The triggering element (button or anchor) needs to contain `data-toggle="above"` attribute.
 
-An eventual closing element needs to have the `.dismiss` class and to be inside the `.above` element.
+An eventual closing element needs to have the `.dismiss` class and to be inside the `.above` element. It can only be triggered with a 'click' event.
 
 - Trigger an `.above` with a button, through a `[data-target]` attribute:
 ```html
@@ -109,7 +111,7 @@ An eventual closing element needs to have the `.dismiss` class and to be inside 
 </div>
 ```
 
-- Trigger an `.above` with an anchor `<a>` through a `[href]` attribute:
+- Trigger an `.above` with an anchor, through a `[href]` attribute:
 ```html
 <!-- this anchor tag will toggle an '.above' element which 'id' is 'targeted-above' -->
 <a data-toggle="above" href="#targeted-above">Open</a>
@@ -141,9 +143,7 @@ Default `.above` behaviour can be extended by adding some classes:
 
 - Transitions:
 
-Instead of just popping above current page content, an `above` element can slide from a side of the view. 
-
-Reveal Basis UI Kit supplied classes are `.above-top`, `.above-right`, `.above-bottom`, `.above-left`:
+Reveal Basis has a few bonus classes to make an `.above` element slide from one side of the view: `.above-top`, `.above-right`, `.above-bottom`, `.above-left`:
 
 `<div class="above above-left">`
 
@@ -155,7 +155,8 @@ There is also an `.above-scale` modifier:
 - Modal dialog box:
 
 The `.above-modal` class constrains the `.above` element to the center of the view (horizontally and vertically).
-Its dimensions are shrinked to half its width by default but this behaviour can easily be customized:
+
+Its dimensions are shrinked to half its width by default but this behaviour can also easily be customized:
 
 `<div class="above above-top above-modal above-custom">`
 
@@ -171,9 +172,8 @@ Its dimensions are shrinked to half its width by default but this behaviour can 
 ```
 
 #### Note:
-If you are using Reveal Basis library via NPM, you can 
 
-Global padding of `above` component has to be explicitly given through `$above-padding` variable in `_customization.scss` file as it is needed for positioning calculation.
+If you are overriding default variables, be aware that global padding of `above` component has to be explicitly given through `$above-padding` variable as it is needed for positioning calculation.
 
-The visibility state modifier class for an `above` element is `.is-visible`.
+The visibility state modifier class for an `.above` element is `.is-visible`.
 
