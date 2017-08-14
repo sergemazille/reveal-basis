@@ -1,13 +1,12 @@
 const path = require('path');
-const outputDir = 'dist'; // generated files project folder
-const outputScriptDir = 'script'; // generated scripts files folder name
+const outputDir = 'dist';
 
 module.exports = {
     entry: './src/script/main.js',
     output: {
         path: path.resolve(__dirname, `${outputDir}`),
-        filename: `${outputScriptDir}/reveal-basis.min.js`,
-        library: 'rb' // global scope variable (rb stands for 'reveal-basis')
+        filename: 'reveal-basis.min.js',
+        library: 'rb'
     },
     module: {
         rules: [
