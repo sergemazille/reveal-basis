@@ -15,6 +15,9 @@
 
     overflow: auto;
 
+    // default style
+    background: $above-background-color;
+
     &.is-visible {
         display: block;
         visibility: visible;
