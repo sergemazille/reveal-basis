@@ -133,7 +133,7 @@ Let's see some 'core' examples (just wait for the 'modifier' section for funnier
 </div>
 ```
 
-[> Play with the example](https://sergemazille.github.io/reveal-basis#above-core-button)
+[> Play with the example](https://sergemazille.github.io/reveal-basis#trigger-an-above-with-a-button-through-a-data-target-attribute)
 
 ##### Trigger an `.above` with an anchor, through a `[href]` attribute:
 ```html
@@ -146,7 +146,7 @@ Let's see some 'core' examples (just wait for the 'modifier' section for funnier
     <button class="dismiss">Close</button>
 </div>
 ```
-[> Play with the example](https://sergemazille.github.io/reveal-basis#above-core-anchor)
+[> Play with the example](https://sergemazille.github.io/reveal-basis#trigger-an-above-with-an-anchor-through-a-href-attribute)
 
 ##### Trigger an `.above` with a button inside an '.above-group' element:
 ```html
