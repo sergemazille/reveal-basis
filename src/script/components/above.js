@@ -11,6 +11,12 @@ export class Above {
 
         // show overlay if not explicitly forbidden
         if (! above.classList.contains('no-overlay')) {
+
+            // lock overlay if need be
+            if (above.classList.contains('is-locked')) {
+                Overlay.lock();
+            }
+
             Overlay.show();
         }
 
