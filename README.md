@@ -8,11 +8,11 @@ You can [have a look at some code samples](https://sergemazille.github.io/reveal
 
 Components are built to be the less opinionated possible. For example, at the 'core' level an `.above` element does nothing but appear on top of the page content.
 
-The real benefits come from the 'modifier' layer where you can define some custom behaviour, and the 'theme' layer where the components' styles live.
-  
-This separation of concerns allows you to benefit from the core mechanism of the library as a basis, a starting point that you can then extend to do what fit your needs.
+The real benefits come from the 'modifier' layer where you can define some custom behaviour, constrain width or position, etc.
 
-Reveal Basis also supplies a few common modifiers, like modals and some themes like 'alert' types notifications (think success, warning, info and danger alerts). They can be used as examples to create your own and can easily be overridden. 
+This separation of concerns allows you to benefit from the core mechanism of the library as a basis, a starting point from which you can add whatever fits your needs.
+
+Reveal Basis supplies a few common modifiers, like modals or notification transitions. They can be used as examples to create your own and can easily be overridden if need be. 
 
 ## Installation
 
@@ -191,21 +191,12 @@ Its dimensions are shrinked to half its width by default:
 It can also leverage a transition modifier: 
 `<div class="above above-modal above-top">`
 
-And this behaviour can easily be customized:
-`<div class="above above-modal above-top above-custom">`
-
-```css
-/* larger modal, positioned on 1/4th of the screen when visible */
-.above-modal.above-custom {
-    width: 70%;
-}
-
-.above-modal.above-custom.is-visible {
-    top: calc(100% / 4);
-}
-```
-
 [> Play with the example](https://sergemazille.github.io/reveal-basis#above-modals)
+
+#### Example themes
+
+[> Play with the example](https://sergemazille.github.io/reveal-basis#above-themes)
+
 
 #### Note:
 
