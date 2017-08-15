@@ -1,4 +1,5 @@
-# Reveal Basis
+Reveal Basis
+============
 
 Reveal Basis is a 'no dependencies' UI Kit which provides a set of tools to ease the front end developer job.
 
@@ -12,15 +13,38 @@ The real benefits come from the 'modifier' layer where you can define some custo
 
 This separation of concerns allows you to benefit from the core mechanism of the library as a basis, a starting point from which you can add whatever fits your needs.
 
-Reveal Basis supplies a few common modifiers, like modals or notification transitions. They can be used as examples to create your own and can easily be overridden if need be. 
+Reveal Basis supplies a few common modifiers, like modals or notification transitions. They can be used as examples to create your own and can easily be overridden if need be.
 
-## Installation
 
-### Install with regular `<link>` and `<script>` tags
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Installation](#installation)
+	- [Install with regular `<link>` and `<script>` tags](#install-with-regular-link-and-script-tags)
+	- [Install with NPM](#install-with-npm)
+		- [Override default styles](#override-default-styles)
+	- [Note on installation](#note-on-installation)
+- [Components](#components)
+	- [Above](#above)
+		- [Usage](#usage)
+			- [Trigger an `.above` with a button, through a `[data-target]` attribute](#trigger-an-above-with-a-button-through-a-data-target-attribute)
+			- [Trigger an `.above` with an anchor, through a `[href]` attribute](#trigger-an-above-with-an-anchor-through-a-href-attribute)
+			- [Trigger an `.above` with a button inside an '.above-group' element](#trigger-an-above-with-a-button-inside-an-above-group-element)
+		- [Modifiers](#modifiers)
+			- [Transitions](#transitions)
+			- [Modal dialog box](#modal-dialog-box)
+			- [Drawer](#drawer)
+			- [Customization examples](#customization-examples)
+		- [Note](#note)
+
+<!-- /TOC -->
+
+# Installation
+
+## Install with regular `<link>` and `<script>` tags
 
 Reveal Basis stylesheet and script file contain core mechanisms for toggling components and are needed for the library to work.
 
-As you would do with a lot of other libraries, you can install it by inserting a `<link>` tag in your page's `<head>` and a `<script>` tag just before the body closing tag `</body>`: 
+As you would do with a lot of other libraries, you can install it by inserting a `<link>` tag in your page's `<head>` and a `<script>` tag just before the body closing tag `</body>`:
 
 Copy the `reveal-basis.min.js` and the `reveal-basis.css` files (both found in the [`dist` folder](https://github.com/sergemazille/reveal-basis/tree/master/dist)) into your own project structure (eg. `lib/js/reveal-basis.min.js`) and insert them into your page template:
 ```html
@@ -47,12 +71,12 @@ You can test if the library is correctly set up with an `above` component:
     <div class="above above-top above-modal" id="test-above">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae, ex maiores minus nesciunt provident quos vitae voluptatem. Distinctio dolor, explicabo iste minus molestiae ullam vero! Adipisci provident reiciendis veniam.
     </div>
-    
+
     <script src="lib/js/reveal-basis.min.js"></script>
 </body>
 ```
 
-### Install with NPM
+## Install with NPM
 
 Reveal Basis is also available as a Node package.
 
@@ -72,7 +96,7 @@ reveal.notification.create({
 
 ```
 
-#### Override default styles
+### Override default styles
 
 One of the advantages of installing Reveal Basis via NPM is that you can change library style defaults with Sass.
 
@@ -104,24 +128,24 @@ reveal.overlay.show();
 
 ```
 
-### Note on installation
+## Note on installation
 
 You shouldn't use both `<script>` **and** `npm install` in your project as it will initialize `spinner` and `overlay` elements twice.
 
-## Components
+# Components
 
-### Above
+## Above
 
 `above` component's purpose is to display an element above the current page content (imagine a modal dialog box or a drawer type sliding menu).
 
-#### Usage
+### Usage
 
 The triggering element (button or anchor) needs to contain `data-toggle="above"` attribute.
 
 An eventual closing element needs to have the `.dismiss` class and to be inside the `.above` element. It can only be triggered with a 'click' event.
 
 Let's see some 'core' examples (just wait for the 'modifier' section for funnier stuff):
-##### Trigger an `.above` with a button, through a `[data-target]` attribute:
+#### Trigger an `.above` with a button, through a `[data-target]` attribute
 ```html
 <!-- this button will toggle an '.above' element which 'id' is 'targeted-above' -->
 <button data-toggle="above" data-target="#targeted-above">Show</button>
@@ -135,7 +159,7 @@ Let's see some 'core' examples (just wait for the 'modifier' section for funnier
 
 [> Play with the example](https://sergemazille.github.io/reveal-basis#above-core-button)
 
-##### Trigger an `.above` with an anchor, through a `[href]` attribute:
+#### Trigger an `.above` with an anchor, through a `[href]` attribute
 ```html
 <!-- this anchor tag will toggle an '.above' element which 'id' is 'targeted-above' -->
 <a data-toggle="above" href="#targeted-above">Show</a>
@@ -148,27 +172,27 @@ Let's see some 'core' examples (just wait for the 'modifier' section for funnier
 ```
 [> Play with the example](https://sergemazille.github.io/reveal-basis#above-core-link)
 
-##### Trigger an `.above` with a button inside an '.above-group' element:
+#### Trigger an `.above` with a button inside an '.above-group' element
 ```html
 <div class="above-group">
 
     <!-- trigger and '.above' are enclosed by an '.above-group' element,
     no need for a [data-target] or a [href] attributes here -->
     <button data-toggle="above">Show</button>
-    
+
     <div class="above">
         <button class="dismiss">Hide</button>
         <p>Lorem ipsum dolor sit amet...</p>
     </div>
-    
+
 </div>
 ```
 [> Play with the example](https://sergemazille.github.io/reveal-basis#above-core-group)
 
-#### Modifiers
-Default `.above` behaviour can be extended by adding some classes:
+### Modifiers
+Default `.above` behaviour can be extended by adding some modifier classes.
 
-##### Transitions:
+#### Transitions
 
 Reveal Basis has a few bonus classes to make an `.above` element slide from one side of the view: `.above-top`, `.above-right`, `.above-bottom`, `.above-left`:
 
@@ -181,19 +205,19 @@ There is also an `.above-scale` modifier:
 
 [> Play with the example](https://sergemazille.github.io/reveal-basis#above-transitions)
 
-##### Modal dialog box:
+#### Modal dialog box
 
 The `.above-modal` class constrains the `.above` element to the center of the view (horizontally and vertically).
 
 Its dimensions are shrinked to half its width by default:
 `<div class="above above-modal">`
 
-It can also leverage a transition modifier: 
+It can also leverage a transition modifier:
 `<div class="above above-modal above-top">`
 
 [> Play with the example](https://sergemazille.github.io/reveal-basis#above-modals)
 
-##### Drawer:
+#### Drawer
 
 An `.above-drawer` could be used to toggle a side menu, for example.
 
@@ -206,16 +230,15 @@ Notes:
 
 [> Play with the example](https://sergemazille.github.io/reveal-basis#above-drawers)
 
-##### Customization examples
+#### Customization examples
 
-You can build upon the `.above` element and its modifiers to create your own custom elements. 
+You can build upon the `.above` element and its modifiers to create your own custom elements.
 
 [> Play with the example](https://sergemazille.github.io/reveal-basis#above-themes)
 
 
-#### Note:
+### Note
 
 If you are overriding default variables, be aware that global padding of `above` component has to be explicitly given through `$above-padding` variable as it is needed for positioning calculation.
 
 The visibility state modifier class for an `.above` element is `.is-visible`.
-
