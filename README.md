@@ -199,12 +199,16 @@ An use for an `.above-drawer` could to toggle a side menu
 
 It has to use a static positioning modifier (eg. `.above-drawer-left`) or a transition one (eg. `.above-transtion-right`).
 
-Note: if no positioning modifier is used, an `.above-drawer` will behave the same as a simple `.above` element.
+Notes:
+- if no positioning modifier is used, an `.above-drawer` will behave the same as a simple `.above` element.
 
+- If [you are overriding default variables](#override-default-styles), you can change the default dimension value set by `$above-drawer-dimension` variable.
 
 [> Play with the example](https://sergemazille.github.io/reveal-basis#above-drawers)
 
-#### Example themes
+#### Customization examples
+
+You can build upon the `.above` element and its modifiers to create your own custom elements. 
 
 [> Play with the example](https://sergemazille.github.io/reveal-basis#above-themes)
 
