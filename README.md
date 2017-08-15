@@ -16,11 +16,11 @@ Reveal Basis also supplies a few common modifiers, like modals and some themes l
 
 ## Installation
 
-### Regular `<script>` tag
+### Install with regular `<script>` tag
 
-Copy the `reveal-basis.min.js` file (found in `dist` folder) into your own project structure (eg. `lib/reveal-basis.min.js`).
+Copy the `reveal-basis.min.js` file (found in [`dist` folder](https://github.com/sergemazille/reveal-basis/tree/master/dist)) into your own project structure (eg. `lib/reveal-basis.min.js`).
 
-Just refer to it with a regular `<script>` tag before your page body closing tag `</body>`:
+Just insert it in your template page within a regular `<script>` tag, before your body closing tag `</body>`:
 ```html
 <body>
     [...]
@@ -41,7 +41,7 @@ You can test if the library is correctly set up with an `above` component:
 </body>
 ```
 
-### NPM
+### Install with NPM
 
 Reveal Basis is also available as a Node package.
 
@@ -65,7 +65,7 @@ reveal.notification.create({
 
 One of the advantages of installing Reveal Basis via NPM is that you can change library style defaults with Sass.
 
-You can find all the variables names used by the library in the `node_modules/reveal-basis/src/style/components/_variables.scss` file.
+You can [find all the variables names](https://github.com/sergemazille/reveal-basis/blob/master/src/style/components/_variables.scss) used by the library in the `node_modules/reveal-basis/src/style/components/_variables.scss` file.
 
 As the Sass keyword `!default` is used, you can override those values within your own Sass build process, [as you would do with Bootstrap variables](https://getbootstrap.com/docs/4.0/getting-started/options/) for example.
 
