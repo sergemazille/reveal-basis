@@ -206,7 +206,7 @@ Notes:
 
 [> Play with the example](https://sergemazille.github.io/reveal-basis#above-drawers)
 
-#### Customization examples
+##### Customization examples
 
 You can build upon the `.above` element and its modifiers to create your own custom elements. 
 

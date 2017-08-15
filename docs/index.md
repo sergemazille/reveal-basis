@@ -33,3 +33,7 @@ The `.bg-gray` class is not part of the library, it is used to better show the c
 ### Drawers:<a name="above-drawers"></a>
 <p data-height="265" data-theme-id="0" data-slug-hash="KvXOrg" data-default-tab="html,result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Above - Modifiers - drawers" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/KvXOrg/">Reveal Basis - Above - Modifiers - drawers</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+### Customization examples:<a name="above-themes"></a>
+<p data-height="265" data-theme-id="0" data-slug-hash="MvENBJ" data-default-tab="html,result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Above - themes examples" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/MvENBJ/">Reveal Basis - Above - themes examples</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
