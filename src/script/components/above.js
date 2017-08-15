@@ -9,7 +9,7 @@ export class Above {
 
     static show(above) {
 
-        // show overlay if not explicitly disallowed
+        // show overlay if not explicitly forbidden
         if (! above.classList.contains('no-overlay')) {
             Overlay.show();
         }
