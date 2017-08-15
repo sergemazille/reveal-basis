@@ -2,9 +2,9 @@
 
 Reveal Basis is a 'no dependencies' UI Kit which provides a set of tools to ease the front end developer job.
 
-It aims to help with DOM elements that have to be shown/hidden like spinner, modals, notifications, etc.
+It aims to help with DOM elements that have to be shown/hidden (spinner, modals, notifications, etc.) by providing basis toggling and triggering mechanism.
 
-[Watch some examples](https://sergemazille.github.io/reveal-basis/)
+You can [have a look at some code samples](https://sergemazille.github.io/reveal-basis/) on the library examples page.
 
 Components are built to be the less opinionated possible. For example, at the 'core' level an `.above` element does nothing but appear on top of the page content.
 
