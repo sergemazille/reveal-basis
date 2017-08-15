@@ -133,7 +133,7 @@ Let's see some 'core' examples (just wait for the 'modifier' section for funnier
 </div>
 ```
 
-[try the example](https://sergemazille.github.io/reveal-basis#above-core-button)
+[Play with the example](https://sergemazille.github.io/reveal-basis#above-core-button)
 
 - Trigger an `.above` with an anchor, through a `[href]` attribute:
 ```html
