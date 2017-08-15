@@ -138,12 +138,12 @@ Let's see some 'core' examples (just wait for the 'modifier' section for funnier
 ##### Trigger an `.above` with an anchor, through a `[href]` attribute:
 ```html
 <!-- this anchor tag will toggle an '.above' element which 'id' is 'targeted-above' -->
-<a data-toggle="above" href="#targeted-above">Open</a>
+<a data-toggle="above" href="#targeted-above">Show</a>
 
 <!-- this is the '.above' element that will be triggered -->
 <div id="targeted-above" class="above">
-    Lorem ipsum dolor sit amet...
-    <button class="dismiss">Close</button>
+    <button class="dismiss">Hide</button>
+    <p>Lorem ipsum dolor sit amet...</p>
 </div>
 ```
 [> Play with the example](https://sergemazille.github.io/reveal-basis#trigger-an-above-with-an-anchor-through-a-href-attribute)
@@ -154,14 +154,16 @@ Let's see some 'core' examples (just wait for the 'modifier' section for funnier
 
     <!-- trigger and '.above' are enclosed by an '.above-group' element,
     no need for a [data-target] or a [href] attributes here -->
-    <button data-toggle="above">Open</button>
+    <button data-toggle="above">Show</button>
+    
     <div class="above">
-        Lorem ipsum dolor sit amet...
-        <button class="dismiss">Close</button>
+        <button class="dismiss">Hide</button>
+        <p>Lorem ipsum dolor sit amet...</p>
     </div>
     
 </div>
 ```
+[> Play with the example](https://sergemazille.github.io/reveal-basis#trigger-an-above-with-a-button-inside-an-above-group-element)
 
 #### Modifiers
 Default `.above` behaviour can be extended by adding some classes:
