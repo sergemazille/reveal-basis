@@ -33,15 +33,3 @@
     background: #041a26;
     color: #fff;
 }
-
-
-// larger modal, positioned on 1/4th of the screen when visible
-.above-modal.above-custom {
-    width: 70%;
-    background: #fff;
-    color: #000;
-
-    &.is-visible {
-        top: calc(100% / 4);
-    }
-}
