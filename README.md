@@ -195,7 +195,7 @@ It can also leverage a transition modifier:
 
 ##### Drawer:
 
-An use for an `.above-drawer` could to toggle a side menu
+An `.above-drawer` could be used to toggle a side menu, for example.
 
 It has to use a static positioning modifier (eg. `.above-drawer-left`) or a transition one (eg. `.above-transtion-right`).
 
