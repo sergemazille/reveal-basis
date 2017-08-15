@@ -185,9 +185,14 @@ There is also an `.above-scale` modifier:
 
 The `.above-modal` class constrains the `.above` element to the center of the view (horizontally and vertically).
 
-Its dimensions are shrinked to half its width by default but this behaviour can also easily be customized:
+Its dimensions are shrinked to half its width by default:
+`<div class="above above-modal">`
 
-`<div class="above above-top above-modal above-custom">`
+It can also leverage a transition modifier: 
+`<div class="above above-modal above-top">`
+
+And this behaviour can easily be customized:
+`<div class="above above-modal above-top above-custom">`
 
 ```css
 /* larger modal, positioned on 1/4th of the screen when visible */
@@ -199,6 +204,8 @@ Its dimensions are shrinked to half its width by default but this behaviour can 
     top: calc(100% / 4);
 }
 ```
+
+[> Play with the example](https://sergemazille.github.io/reveal-basis#above-modals)
 
 #### Note:
 
