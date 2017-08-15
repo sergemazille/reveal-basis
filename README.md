@@ -16,28 +16,39 @@ Reveal Basis also supplies a few common modifiers, like modals and some themes l
 
 ## Installation
 
-### Install with regular `<script>` tag
+### Install with regular `<link>` and `<script>` tags
 
-Copy the `reveal-basis.min.js` file (found in [`dist` folder](https://github.com/sergemazille/reveal-basis/tree/master/dist)) into your own project structure (eg. `lib/reveal-basis.min.js`).
+Reveal Basis stylesheet and script file contain core mechanisms for toggling components and are needed for the library to work.
 
-Just insert it in your template page within a regular `<script>` tag, before your body closing tag `</body>`:
+As you would do with a lot of other libraries, you can install it by inserting a `<link>` tag in your page `<head>` and a `<script>` tag just before the body closing tag `</body>`: 
+
+Copy the `reveal-basis.min.js` and the `reveal-basis.css` files (both found in the [`dist` folder](https://github.com/sergemazille/reveal-basis/tree/master/dist)) into your own project structure (eg. `lib/js/reveal-basis.min.js`) and insert them into your page template:
 ```html
+<head>
+    [...]
+    <link rel="stylesheet" href="lib/css/reveal-basis.css">
+</head>
+
 <body>
     [...]
-    <script src="lib/reveal-basis.min.js"></script>
+    <script src="lib/js/reveal-basis.min.js"></script>
 </body>
 ```
 
 You can test if the library is correctly set up with an `above` component:
 ```html
 <!-- index.html -->
+<head>
+    <link rel="stylesheet" href="lib/css/reveal-basis.css">
+</head>
+
 <body>
     <button data-toggle="above" data-target="#test-above">Show a modal-ipsum</button>
     <div class="above above-top above-modal" id="test-above">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae, ex maiores minus nesciunt provident quos vitae voluptatem. Distinctio dolor, explicabo iste minus molestiae ullam vero! Adipisci provident reiciendis veniam.
     </div>
     
-    <script src="lib/reveal-basis.min.js"></script>
+    <script src="lib/js/reveal-basis.min.js"></script>
 </body>
 ```
 
@@ -65,7 +76,7 @@ reveal.notification.create({
 
 One of the advantages of installing Reveal Basis via NPM is that you can change library style defaults with Sass.
 
-You can [find all the variables names](https://github.com/sergemazille/reveal-basis/blob/master/src/style/components/_variables.scss) used by the library in the `node_modules/reveal-basis/src/style/components/_variables.scss` file.
+You can find all the variables names used by the library in the [`src/style/components/_variables.scss` file](https://github.com/sergemazille/reveal-basis/blob/master/src/style/components/_variables.scss).
 
 As the Sass keyword `!default` is used, you can override those values within your own Sass build process, [as you would do with Bootstrap variables](https://getbootstrap.com/docs/4.0/getting-started/options/) for example.
 
