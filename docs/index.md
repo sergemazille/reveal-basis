@@ -1,14 +1,21 @@
-# Table of contents
-* [Above component](#above-component)
-  * [Above core](#core)
-    * [Trigger with a button](#above-core-button)
-    * [Trigger with an anchor](#above-core-anchor)
-    * [Trigger inside an above-group](#above-core-group)
-  * [Above modifiers](#modifiers)
-    * [Transtions](#above-transitions)
-    * [Modals](#above-modals)
-    * [Drawers](#above-drawers)
-    * [Customization examples](#above-themes)
+Table of contents
+=================
+
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Above component](#above-component)
+	- [Core](#core)
+		- [Trigger an `.above` with a button, through a `[data-target]` attribute:<a name="above-core-button"></a>](#trigger-an-above-with-a-button-through-a-data-target-attributea-nameabove-core-buttona)
+			- [Note](#note)
+		- [Trigger an `.above` with an anchor, through a `[href]` attribute:<a name="above-core-link"></a>](#trigger-an-above-with-an-anchor-through-a-href-attributea-nameabove-core-linka)
+		- [Trigger an `.above` with a button inside an '.above-group' element:<a name="above-core-group"></a>](#trigger-an-above-with-a-button-inside-an-above-group-elementa-nameabove-core-groupa)
+	- [Modifiers](#modifiers)
+		- [Transitions:<a name="above-transitions"></a>](#transitionsa-nameabove-transitionsa)
+		- [Modals:<a name="above-modals"></a>](#modalsa-nameabove-modalsa)
+		- [Drawers:<a name="above-drawers"></a>](#drawersa-nameabove-drawersa)
+		- [Customization examples:<a name="above-themes"></a>](#customization-examplesa-nameabove-themesa)
+
+<!-- /TOC -->
 
 # Above component
 
