@@ -16,7 +16,12 @@ The `.bg-gray` class is not part of the library, it is used to better show the c
 <p data-height="265" data-theme-id="0" data-slug-hash="qXPGrv" data-default-tab="html,result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Above - Core - trigger anchor" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/qXPGrv/">Reveal Basis - Above - Core - trigger anchor</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-
 ### Trigger an `.above` with a button inside an '.above-group' element:<a name="above-core-group"></a>
 <p data-height="265" data-theme-id="0" data-slug-hash="gxGemo" data-default-tab="html,result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Above - Core - above group" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/gxGemo/">Reveal Basis - Above - Core - above group</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+## Modifiers
+
+### Transitions:<a name="above-transitions"></a>
+<p data-height="265" data-theme-id="0" data-slug-hash="QMqXaJ" data-default-tab="html,result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Above - Modifiers - transitions" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/QMqXaJ/">Reveal Basis - Above - Modifiers - transitions</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>

@@ -179,6 +179,8 @@ There is also an `.above-scale` modifier:
 
 `<div class="above above-scale">`
 
+[> Play with the example](https://sergemazille.github.io/reveal-basis#above-transitions)
+
 ##### Modal dialog box:
 
 The `.above-modal` class constrains the `.above` element to the center of the view (horizontally and vertically).
