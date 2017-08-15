@@ -120,17 +120,10 @@ The triggering element (button or anchor) needs to contain `data-toggle="above"`
 
 An eventual closing element needs to have the `.dismiss` class and to be inside the `.above` element. It can only be triggered with a 'click' event.
 
+Let's see some 'core' examples (just wait for the 'modifier' section for funnier stuff):
 - Trigger an `.above` with a button, through a `[data-target]` attribute:
-```html
-<!-- this button will toggle an '.above' element which 'id' is 'targeted-above' -->
-<button data-toggle="above" data-target="#targeted-above">Open</button>
-
-<!-- this is the '.above' element that will be triggered -->
-<div id="targeted-above" class="above">
-    Lorem ipsum dolor sit amet...
-    <button class="dismiss">Close</button>
-</div>
-```
+<p data-height="265" data-theme-id="0" data-slug-hash="gxGemo" data-default-tab="html,result" data-user="sergemazille" data-embed-version="2" data-pen-title="Simple above example" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/gxGemo/">Simple above example</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 - Trigger an `.above` with an anchor, through a `[href]` attribute:
 ```html
