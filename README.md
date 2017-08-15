@@ -121,7 +121,7 @@ The triggering element (button or anchor) needs to contain `data-toggle="above"`
 An eventual closing element needs to have the `.dismiss` class and to be inside the `.above` element. It can only be triggered with a 'click' event.
 
 Let's see some 'core' examples (just wait for the 'modifier' section for funnier stuff):
-- Trigger an `.above` with a button, through a `[data-target]` attribute:
+##### Trigger an `.above` with a button, through a `[data-target]` attribute:
 ```html
 <!-- this button will toggle an '.above' element which 'id' is 'targeted-above' -->
 <button data-toggle="above" data-target="#targeted-above">Show</button>
@@ -135,7 +135,7 @@ Let's see some 'core' examples (just wait for the 'modifier' section for funnier
 
 [> Play with the example](https://sergemazille.github.io/reveal-basis#above-core-button)
 
-- Trigger an `.above` with an anchor, through a `[href]` attribute:
+##### Trigger an `.above` with an anchor, through a `[href]` attribute:
 ```html
 <!-- this anchor tag will toggle an '.above' element which 'id' is 'targeted-above' -->
 <a data-toggle="above" href="#targeted-above">Open</a>
@@ -148,7 +148,7 @@ Let's see some 'core' examples (just wait for the 'modifier' section for funnier
 ```
 [> Play with the example](https://sergemazille.github.io/reveal-basis#above-core-anchor)
 
-- Trigger an `.above` with a button inside an '.above-group' element:
+##### Trigger an `.above` with a button inside an '.above-group' element:
 ```html
 <div class="above-group">
 
@@ -166,7 +166,7 @@ Let's see some 'core' examples (just wait for the 'modifier' section for funnier
 #### Modifiers
 Default `.above` behaviour can be extended by adding some classes:
 
-- Transitions:
+##### Transitions:
 
 Reveal Basis has a few bonus classes to make an `.above` element slide from one side of the view: `.above-top`, `.above-right`, `.above-bottom`, `.above-left`:
 
@@ -177,7 +177,7 @@ There is also an `.above-scale` modifier:
 
 `<div class="above above-scale">`
 
-- Modal dialog box:
+##### Modal dialog box:
 
 The `.above-modal` class constrains the `.above` element to the center of the view (horizontally and vertically).
 
