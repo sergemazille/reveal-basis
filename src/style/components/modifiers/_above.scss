@@ -4,11 +4,11 @@
     // sliding animations
     // ==================
 
-    &.above-top, &.above-right, &.above-bottom, &.above-left {
+    &.above-transition-top, &.above-transition-right, &.above-transition-bottom, &.above-transition-left {
         display: block;
     }
 
-    &.above-top, &.above-bottom {
+    &.above-transition-top, &.above-transition-bottom {
         transition: top $above-transition-duration $above-transition-timing-function, visibility 0s $above-transition-duration, opacity 0s $above-transition-duration; // visibility and opacity toggle are delayed after 'above' element has been hidden
         opacity: 0; // avoid scale artifact on page reload
         will-change: top, opacity, visibility;
@@ -21,7 +21,7 @@
         }
     }
 
-    &.above-right, &.above-left {
+    &.above-transition-right, &.above-transition-left {
         transition: left $above-transition-duration $above-transition-timing-function, visibility 0s $above-transition-duration, opacity 0s $above-transition-duration; // visibility and opacity toggle are delayed after 'above' element has been hidden
         opacity: 0; // avoid scale artifact on page reload
         will-change: left, opacity, visibility;
@@ -35,16 +35,16 @@
     }
 
     // starting positions
-    &.above-top { top: calc(-100vh - 50%); }
-    &.above-right { left: calc(100vw + 50%); }
-    &.above-bottom { top: calc(100vh + 50%); }
-    &.above-left { left: calc(-100vw - 50%); }
+    &.above-transition-top { top: calc(-100vh - 50%); }
+    &.above-transition-right { left: calc(100vw + 50%); }
+    &.above-transition-bottom { top: calc(100vh + 50%); }
+    &.above-transition-left { left: calc(-100vw - 50%); }
 
 
     // scale animation
     // ===============
 
-    &.above-scale {
+    &.above-transition-scale {
         display: block;
 
         transform: perspective(1px) translate(-50%,-50%) scale(0);
@@ -68,7 +68,7 @@
 
         $offset: calc((100% - #{$above-drawer-dimension}) / 2 );
 
-        &.above-right {
+        &.above-transition-right {
             width: $above-drawer-dimension;
 
             &.is-visible {
@@ -76,7 +76,7 @@
             }
         }
 
-        &.above-left {
+        &.above-transition-left {
             width: $above-drawer-dimension;
 
             &.is-visible {
@@ -85,7 +85,7 @@
         }
 
 
-        &.above-bottom {
+        &.above-transition-bottom {
             height: $above-drawer-dimension;
 
             &.is-visible {
@@ -93,7 +93,7 @@
             }
         }
 
-        &.above-top {
+        &.above-transition-top {
             height: $above-drawer-dimension;
 
             &.is-visible {

@@ -193,6 +193,11 @@ It can also leverage a transition modifier:
 
 [> Play with the example](https://sergemazille.github.io/reveal-basis#above-modals)
 
+##### Drawer:
+
+A `.above-drawer` can be used to toggle a side menu
+
+
 #### Example themes
 
 [> Play with the example](https://sergemazille.github.io/reveal-basis#above-themes)
