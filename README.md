@@ -132,7 +132,7 @@ reveal.overlay.show();
 
 ## Note on installation
 
-You shouldn't use both `<script>` **and** `npm install` in your project as it will initialize `spinner` and `overlay` elements twice.
+You shouldn't use both `<script>` **and** `npm install` in your project as it will initialize `spinner` element twice.
 
 # Components
 
