@@ -3,13 +3,16 @@ import '../style/reveal-basis.scss';
 
 // scripts imports
 import { Overlay } from './components/overlay';
+import { Spinner } from './components/spinner';
+
 import { Above } from './components/above';
 import { Notification } from './components/notification';
 import { Drop } from './components/drop';
-import { Spinner } from './components/spinner';
+
+// unique components creation
+new Overlay();
 
 // components initialization
-Overlay.init();
 Above.init();
 Notification.init();
 Drop.init();
