@@ -202,7 +202,7 @@ It has to use a static positioning modifier (eg. `.above-drawer-left`) or a tran
 Notes:
 - if no positioning modifier is used, an `.above-drawer` will behave the same as a simple `.above` element.
 
-- If [you are overriding default variables](#override-default-styles), you can change the default dimension value set by `$above-drawer-dimension` variable.
+- If [you are overriding default variables](#override-default-styles), you can change the default dimension set by `$above-drawer-dimension` variable.
 
 [> Play with the example](https://sergemazille.github.io/reveal-basis#above-drawers)
 
