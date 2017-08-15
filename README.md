@@ -8,15 +8,11 @@ You can [have a look at some code samples](https://sergemazille.github.io/reveal
 
 Components are built to be the less opinionated possible. For example, at the 'core' level an `.above` element does nothing but appear on top of the page content.
 
-But of course you are not stuck with the basis behaviour of the components and the magic reveals itself in the 'modifier' layer.
-
-And finally, aesthetic comes with the 'theme' layer.
+The real benefits come from the 'modifier' layer where you can define some custom behaviour, and the 'theme' layer where the components' styles live.
   
-This separation of concern allows you to benefit from the core mechanism of the library as a basis, a starting point that you can then extend to do what fit your needs.
+This separation of concerns allows you to benefit from the core mechanism of the library as a basis, a starting point that you can then extend to do what fit your needs.
 
-Reveal Basis also supplies some common modifiers, like modals and some themes like 'alert' types notifications (think success, warning, info, danger alerts).
-
-They can be used as examples to create your own and can easily be overridden. 
+Reveal Basis also supplies a few common modifiers, like modals and some themes like 'alert' types notifications (think success, warning, info and danger alerts). They can be used as examples to create your own and can easily be overridden. 
 
 ## Installation
 
