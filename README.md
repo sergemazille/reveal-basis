@@ -20,7 +20,7 @@ Reveal Basis also supplies a few common modifiers, like modals and some themes l
 
 Reveal Basis stylesheet and script file contain core mechanisms for toggling components and are needed for the library to work.
 
-As you would do with a lot of other libraries, you can install it by inserting a `<link>` tag in your page `<head>` and a `<script>` tag just before the body closing tag `</body>`: 
+As you would do with a lot of other libraries, you can install it by inserting a `<link>` tag in your page's `<head>` and a `<script>` tag just before the body closing tag `</body>`: 
 
 Copy the `reveal-basis.min.js` and the `reveal-basis.css` files (both found in the [`dist` folder](https://github.com/sergemazille/reveal-basis/tree/master/dist)) into your own project structure (eg. `lib/js/reveal-basis.min.js`) and insert them into your page template:
 ```html
