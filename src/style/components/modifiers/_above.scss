@@ -68,7 +68,7 @@
 
         $offset: calc((100% - #{$above-drawer-dimension}) / 2 );
 
-        &.above-transition-right {
+        &.above-transition-right, &.above-drawer-right {
             width: $above-drawer-dimension;
 
             &.is-visible {
@@ -76,7 +76,7 @@
             }
         }
 
-        &.above-transition-left {
+        &.above-transition-left, &.above-drawer-left {
             width: $above-drawer-dimension;
 
             &.is-visible {
@@ -84,8 +84,7 @@
             }
         }
 
-
-        &.above-transition-bottom {
+        &.above-transition-bottom, &.above-drawer-bottom {
             height: $above-drawer-dimension;
 
             &.is-visible {
@@ -93,7 +92,7 @@
             }
         }
 
-        &.above-transition-top {
+        &.above-transition-top, &.above-drawer-top {
             height: $above-drawer-dimension;
 
             &.is-visible {
