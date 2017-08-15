@@ -1,3 +1,27 @@
+# Table of contents
+<ul>
+    <li>[Above component](#above-component)
+        <ul>
+            <li>[Above core](#core)
+                <ul>
+                    <li>[Trigger with a button](#above-core-button)</li>
+                    <li>[Trigger with an anchor](#above-core-anchor)</li>
+                    <li>[Trigger inside an above-group](#above-core-group)</li>
+                </ul>
+            </li>
+            <li>[Above modifiers](#modifiers)
+                <ul>
+                    <li>[Transtions](#above-transitions)</li>
+                    <li>[Modals](#above-modals)</li>
+                    <li>[Drawers](#above-drawers)</li>
+                    <li>[Customization examples](#above-themes)</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+
 # Above component
 
 `above` component's purpose is to display an element above the current page content (imagine a modal dialog box or a drawer type sliding menu).
