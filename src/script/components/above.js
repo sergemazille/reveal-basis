@@ -8,7 +8,12 @@ export class Above {
     }
 
     static show(above) {
-        Overlay.show();
+
+        // show overlay if not explicitly disallowed
+        if (! above.classList.contains('no-overlay')) {
+            Overlay.show();
+        }
+
         above.classList.add('is-visible');
     }
 
