@@ -195,8 +195,14 @@ It can also leverage a transition modifier:
 
 ##### Drawer:
 
-A `.above-drawer` can be used to toggle a side menu
+An use for an `.above-drawer` could to toggle a side menu
 
+It has to use a static positioning modifier (eg. `.above-drawer-left`) or a transition one (eg. `.above-transtion-right`).
+
+Note: if no positioning modifier is used, an `.above-drawer` will behave the same as a simple `.above` element.
+
+
+[> Play with the example](https://sergemazille.github.io/reveal-basis#above-drawers)
 
 #### Example themes
 
