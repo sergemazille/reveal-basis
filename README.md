@@ -161,7 +161,7 @@ Let's see some 'core' examples (just wait for the 'modifier' section for funnier
 </div>
 ```
 
-[> Play with the example](https://sergemazille.github.io/reveal-basis#above-core-button)
+[> Play with the example](https://sergemazille.github.io/reveal-basis#trigger-an-above-with-a-button-through-a-data-target-attribute)
 
 #### Trigger an `.above` with an anchor, through a `[href]` attribute
 ```html
@@ -174,7 +174,7 @@ Let's see some 'core' examples (just wait for the 'modifier' section for funnier
     <p>Lorem ipsum dolor sit amet...</p>
 </div>
 ```
-[> Play with the example](https://sergemazille.github.io/reveal-basis#above-core-link)
+[> Play with the example](https://sergemazille.github.io/reveal-basis#trigger-an-above-with-an-anchor-through-a-href-attribute)
 
 #### Trigger an `.above` with a button inside an '.above-group' element
 ```html
@@ -191,7 +191,7 @@ Let's see some 'core' examples (just wait for the 'modifier' section for funnier
 
 </div>
 ```
-[> Play with the example](https://sergemazille.github.io/reveal-basis#above-core-group)
+[> Play with the example](https://sergemazille.github.io/reveal-basis#trigger-an-above-with-a-button-inside-an-above-group-element)
 
 ### Modifiers
 Default `.above` behaviour can be extended by adding some modifier classes.
@@ -207,7 +207,7 @@ There is also an `.above-scale` modifier:
 
 `<div class="above above-scale">`
 
-[> Play with the example](https://sergemazille.github.io/reveal-basis#above-transitions)
+[> Play with the example](https://sergemazille.github.io/reveal-basis#transitions)
 
 #### Modal dialog box
 
@@ -219,7 +219,7 @@ Its dimensions are shrinked to half its width by default:
 It can also leverage a transition modifier:
 `<div class="above above-modal above-top">`
 
-[> Play with the example](https://sergemazille.github.io/reveal-basis#above-modals)
+[> Play with the example](https://sergemazille.github.io/reveal-basis#modals)
 
 #### Drawer
 
@@ -232,13 +232,13 @@ Notes:
 
 - If [you are overriding default variables](#override-default-styles), you can change the default dimension set by `$above-drawer-dimension` variable.
 
-[> Play with the example](https://sergemazille.github.io/reveal-basis#above-drawers)
+[> Play with the example](https://sergemazille.github.io/reveal-basis#drawers)
 
 #### Customization examples
 
 You can build upon the `.above` element and its modifiers to create your own custom elements.
 
-[> Play with the example](https://sergemazille.github.io/reveal-basis#above-themes)
+[> Play with the example](https://sergemazille.github.io/reveal-basis#customization-examples)
 
 
 ### Note
