@@ -4,7 +4,7 @@
 
 ## Core
 
-### Trigger an `.above` with a button, through a `[data-target]` attribute:
+### Trigger an `.above` with a button, through a `[data-target]` attribute:<a name="above-core-button"></a>
 <p data-height="265" data-theme-id="0" data-slug-hash="gxGemo" data-default-tab="html,result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Above - Core - trigger button" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/gxGemo/">Reveal Basis - Above - Core - trigger button</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
@@ -12,11 +12,11 @@
 
 The `.bg-gray` class is not part of the library, it is used to better show the component behaviour.
 
-### Trigger an `.above` with an anchor, through a `[href]` attribute:
+### Trigger an `.above` with an anchor, through a `[href]` attribute:<a name="above-core-link"></a>
 <p data-height="265" data-theme-id="0" data-slug-hash="qXPGrv" data-default-tab="html,result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Above - Core - trigger anchor" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/qXPGrv/">Reveal Basis - Above - Core - trigger anchor</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 
-### Trigger an `.above` with a button inside an '.above-group' element:
+### Trigger an `.above` with a button inside an '.above-group' element:<a name="above-core-group"></a>
 <p data-height="265" data-theme-id="0" data-slug-hash="gxGemo" data-default-tab="html,result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Above - Core - above group" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/gxGemo/">Reveal Basis - Above - Core - above group</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
