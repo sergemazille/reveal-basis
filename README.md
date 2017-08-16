@@ -69,7 +69,7 @@ You can test if the library is correctly set up with an `above` component:
 
 <body>
     <button data-toggle="above" data-target="#test-above">Show a modal-ipsum</button>
-    <div class="above above-top above-modal" id="test-above">
+    <div class="above --type-modal --position-top" id="test-above">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae, ex maiores minus nesciunt provident quos vitae voluptatem. Distinctio dolor, explicabo iste minus molestiae ullam vero! Adipisci provident reiciendis veniam.
     </div>
 
@@ -123,9 +123,9 @@ And now you can display your beautiful red overlay:
 
 ```typescript
 // script.js
-import * as reveal from 'reveal-basis';
+import * as rb from 'reveal-basis';
 
-reveal.overlay.show();
+rb.overlay.show();
 
 ```
 
@@ -144,7 +144,7 @@ An eventual closing element needs to have the `.dismiss` class and to be inside 
 #### Options
 - '.no-overlay'
 
-By default, triggering an `.above` element will also trigger the page's `#overlay` element. This behaviour can been changed by adding a `.no-overlay` class on the `.above` element.
+By default, triggering an `.above` element will also trigger the page's `#overlay` element. This behaviour can been changed by adding a `.--no-overlay` class on the `.above` element.
 
 - '.is-locked'
 
@@ -200,37 +200,37 @@ Default `.above` behaviour can be extended by adding some modifier classes.
 
 #### Transitions
 
-Reveal Basis has a few bonus classes to make an `.above` element slide from one side of the view: `.above-top`, `.above-right`, `.above-bottom`, `.above-left`:
+Reveal Basis has a few bonus classes to make an `.above` element slide from one side of the view: `.--transition-top`, `.--transition-right`, `.--transition-bottom`, `.--transition-left`:
 
-`<div class="above above-left">`
+`<div class="above --transition-left">`
 
 
-There is also an `.above-scale` modifier:
+There is also an `.--transition-scale` modifier:
 
-`<div class="above above-scale">`
+`<div class="above --transition-scale">`
 
 [> Play with the example](https://sergemazille.github.io/reveal-basis#transitions)
 
 #### Modal dialog box
 
-The `.above-modal` class constrains the `.above` element to the center of the view (horizontally and vertically).
+The `.--type-modal` class constrains the `.above` element to the center of the view (horizontally and vertically).
 
 Its dimensions are shrinked to half its width by default:
-`<div class="above above-modal">`
+`<div class="above --type-modal">`
 
 It can also leverage a transition modifier:
-`<div class="above above-modal above-top">`
+`<div class="above --type-modal --transition-top">`
 
 [> Play with the example](https://sergemazille.github.io/reveal-basis#modals)
 
 #### Drawer
 
-An `.above-drawer` could be used to toggle a side menu, for example.
+An 'drawer' type `above` (`.--type-drawer`) could be used to toggle a side menu, for example.
 
-It has to use a static positioning modifier (eg. `.above-drawer-left`) or a transition one (eg. `.above-transtion-right`).
+It has to use a static positioning modifier (eg. `.--position-left`) or a transition one (eg. `.--transition-right`).
 
 Notes:
-- if no positioning modifier is used, an `.above-drawer` will behave the same as a simple `.above` element.
+- if no positioning modifier is used, an drawer type `above` (`.--type-drawer`) will behave the same as a simple `.above` element.
 
 - If [you are overriding default variables](#override-default-styles), you can change the default dimension set by `$above-drawer-dimension` variable.
 

@@ -1,14 +1,13 @@
 .above {
 
-
     // sliding animations
     // ==================
 
-    &.above-transition-top, &.above-transition-right, &.above-transition-bottom, &.above-transition-left {
+    &.--transition-top, &.--transition-right, &.--transition-bottom, &.--transition-left {
         display: block;
     }
 
-    &.above-transition-top, &.above-transition-bottom {
+    &.--transition-top, &.--transition-bottom {
         transition: top $above-transition-duration $above-transition-timing-function, visibility 0s $above-transition-duration, opacity 0s $above-transition-duration; // visibility and opacity toggle are delayed after 'above' element has been hidden
         opacity: 0; // avoid scale artifact on page reload
         will-change: top, opacity, visibility;
@@ -21,7 +20,7 @@
         }
     }
 
-    &.above-transition-right, &.above-transition-left {
+    &.--transition-right, &.--transition-left {
         transition: left $above-transition-duration $above-transition-timing-function, visibility 0s $above-transition-duration, opacity 0s $above-transition-duration; // visibility and opacity toggle are delayed after 'above' element has been hidden
         opacity: 0; // avoid scale artifact on page reload
         will-change: left, opacity, visibility;
@@ -35,16 +34,16 @@
     }
 
     // starting positions
-    &.above-transition-top { top: calc(-100vh - 50%); }
-    &.above-transition-right { left: calc(100vw + 50%); }
-    &.above-transition-bottom { top: calc(100vh + 50%); }
-    &.above-transition-left { left: calc(-100vw - 50%); }
+    &.--transition-top { top: calc(-100vh - 50%); }
+    &.--transition-right { left: calc(100vw + 50%); }
+    &.--transition-bottom { top: calc(100vh + 50%); }
+    &.--transition-left { left: calc(-100vw - 50%); }
 
 
     // scale animation
     // ===============
 
-    &.above-transition-scale {
+    &.--transition-scale {
         display: block;
 
         transform: perspective(1px) translate(-50%,-50%) scale(0);
@@ -64,11 +63,11 @@
     // drawer type
     // ===========
 
-    &.above-drawer {
+    &.--type-drawer {
 
         $offset: calc((100% - #{$above-drawer-dimension}) / 2 );
 
-        &.above-transition-right, &.above-drawer-right {
+        &.--transition-right, &.--position-right {
             width: $above-drawer-dimension;
 
             &.is-visible {
@@ -76,7 +75,7 @@
             }
         }
 
-        &.above-transition-left, &.above-drawer-left {
+        &.--transition-left, &.--position-left {
             width: $above-drawer-dimension;
 
             &.is-visible {
@@ -84,7 +83,7 @@
             }
         }
 
-        &.above-transition-bottom, &.above-drawer-bottom {
+        &.--transition-bottom, &.--position-bottom {
             height: $above-drawer-dimension;
 
             &.is-visible {
@@ -92,7 +91,7 @@
             }
         }
 
-        &.above-transition-top, &.above-drawer-top {
+        &.--transition-top, &.--position-top {
             height: $above-drawer-dimension;
 
             &.is-visible {
@@ -105,7 +104,7 @@
     // modal type
     // ==========
 
-    &.above-modal {
+    &.--type-modal {
         display: block;
 
         width: 50vw;

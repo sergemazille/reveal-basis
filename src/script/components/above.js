@@ -13,7 +13,7 @@ export class Above {
     static show(above) {
 
         // show overlay if not explicitly forbidden
-        if (! above.classList.contains('no-overlay')) {
+        if (! above.classList.contains('--no-overlay')) {
 
             // lock overlay if need be
             if (above.classList.contains('is-locked')) {
