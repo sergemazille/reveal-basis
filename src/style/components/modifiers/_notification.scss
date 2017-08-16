@@ -76,4 +76,8 @@
             will-change: opacity;
         }
     }
+
+    &.--width-auto {
+        align-self: flex-start;
+    }
 }
