@@ -47,7 +47,7 @@ export class Overlay {
         overlay.classList.remove('is-visible');
 
         // hide eventual locked cursor icon
-        overlay.classList.remove('lock-cursor');
+        overlay.classList.remove('--cursor-locked');
     }
 
     lock() {
@@ -65,7 +65,7 @@ function registerEvents(overlay) {
         // overlay is hidden: clean up
         if (! overlay.classList.contains('is-visible')) {
             overlay.classList.remove('is-locked');
-            overlay.classList.remove('lock-cursor');
+            overlay.classList.remove('--cursor-locked');
             lockable = false;
         }
 
@@ -76,7 +76,7 @@ function registerEvents(overlay) {
 
         // overlay is visible: add locked cursor icon if need be
         if (overlay.classList.contains('is-visible') && lockable) {
-            overlay.classList.add('lock-cursor');
+            overlay.classList.add('--cursor-locked');
         }
     });
 }
