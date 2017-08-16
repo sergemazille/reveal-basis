@@ -24,13 +24,12 @@ Table of Content
 	- [Install with regular `<link>` and `<script>` tags](#install-with-regular-link-and-script-tags)
 	- [Install with NPM](#install-with-npm)
 		- [Override default styles](#override-default-styles)
-	- [Note on installation](#note-on-installation)
 - [Components](#components)
 	- [Above](#above)
 		- [Usage](#usage)
 			- [Trigger an `.above` with a button, through a `[data-target]` attribute](#trigger-an-above-with-a-button-through-a-data-target-attribute)
 			- [Trigger an `.above` with an anchor, through a `[href]` attribute](#trigger-an-above-with-an-anchor-through-a-href-attribute)
-			- [Trigger an `.above` with a button inside an '.above-group' element](#trigger-an-above-with-a-button-inside-an-above-group-element)
+			- [Trigger an `.above` with a button inside an `.above-group` element](#trigger-an-above-with-a-button-inside-an-above-group-element)
 		- [Modifiers](#modifiers)
 			- [Transitions](#transitions)
 			- [Modal dialog box](#modal-dialog-box)
@@ -130,10 +129,6 @@ reveal.overlay.show();
 
 ```
 
-## Note on installation
-
-You shouldn't use both `<script>` **and** `npm install` in your project as it will initialize `spinner` element twice.
-
 # Components
 
 ## Above
@@ -183,7 +178,7 @@ Let's see some 'core' examples (just wait for the 'modifier' section for funnier
 ```
 [> Play with the example](https://sergemazille.github.io/reveal-basis#trigger-an-above-with-an-anchor-through-a-href-attribute)
 
-#### Trigger an `.above` with a button inside an '.above-group' element
+#### Trigger an `.above` with a button inside an `.above-group` element
 ```html
 <div class="above-group">
 
