@@ -10,6 +10,7 @@ module.exports = {
         library: 'rb',
         libraryTarget: 'umd'
     },
+    devtool: 'source-map',
     module: {
         rules: [
             {
