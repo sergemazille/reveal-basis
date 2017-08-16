@@ -10,7 +10,7 @@ import { Notification } from './components/notification';
 import { Drop } from './components/drop';
 
 // unique components creation
-new Overlay();
+new Overlay().init();
 
 // components initialization
 Above.init();
@@ -18,7 +18,7 @@ Notification.init();
 Drop.init();
 Spinner.init();
 
-// add component to global scope
+// add components to global scope
 module.exports = {
     overlay: Overlay,
     above: Above,

@@ -1,52 +1,53 @@
-// by default, overlay won't stay locked after transition
+let overlay;
+let body;
 let lockable = false;
 
 export class Overlay {
 
-    // avoid overlay to be declared multiple times
     constructor() {
-        if (! this.overlay) {
-            this.init();
+
+        // avoid multiple declarations
+        if (! overlay) {
+
+            // create an #overlay element...
+            overlay = document.createElement('div');
+            overlay.setAttribute('id', 'overlay');
+
+            // ...and append it on DOM
+            body = document.querySelector('body');
+            body.appendChild(overlay);
+
         } else {
             return this;
         }
     }
 
     init() {
-
-        // create an #overlay element...
-        this.overlay = document.createElement('div');
-        this.overlay.setAttribute('id', 'overlay');
-
-        // ...and append it on DOM
-        this.body = document.querySelector('body');
-        this.body.appendChild(this.overlay);
-
-        registerEvents(this.overlay);
+        registerEvents(overlay);
     }
 
     show() {
 
         // forbid body to be scrollable
-        this.body.classList.add('is-locked');
+        body.classList.add('is-locked');
 
         // overlay won't be clickable until 'transitionend' event
-        this.overlay.classList.add('is-locked');
+        overlay.classList.add('is-locked');
 
         // display overlay
-        this.overlay.classList.add('is-visible');
+        overlay.classList.add('is-visible');
     }
 
     hide() {
 
         // body is scrollable again
-        this.body.classList.remove('is-locked');
+        body.classList.remove('is-locked');
 
         // hide overlay
-        this.overlay.classList.remove('is-visible');
+        overlay.classList.remove('is-visible');
 
         // hide eventual locked cursor icon
-        this.overlay.classList.remove('lock-cursor');
+        overlay.classList.remove('lock-cursor');
     }
 
     lock() {
