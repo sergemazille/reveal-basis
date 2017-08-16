@@ -1,32 +1,42 @@
 import { Overlay } from './overlay';
 
+let spinner;
+let overlay = new Overlay();
+
 export class Spinner {
 
-    static init() {
+    constructor() {
 
-        // create a #spinner element
-        this.spinner = document.createElement('div');
-        this.spinner.setAttribute('id', 'spinner');
+        // avoid multiple declarations
+        if (! spinner) {
 
-        // create 3 spinner items
-        for(let i=0; i<3; i++) {
-            let item = document.createElement('div');
-            item.classList.add(`spinner-${i}`);
-            this.spinner.appendChild(item);
+            // create a #spinner element
+            spinner = document.createElement('div');
+            spinner.setAttribute('id', 'spinner');
+
+            // create 3 spinner items
+            for(let i=0; i<3; i++) {
+                let item = document.createElement('div');
+                item.classList.add(`spinner-${i}`);
+                spinner.appendChild(item);
+            }
+
+            // append spinner on DOM
+            document.querySelector('body').appendChild(spinner);
+
+        } else {
+            return this;
         }
-
-        // append spinner on DOM
-        document.querySelector('body').appendChild(this.spinner);
     }
 
-    static show() {
-        Overlay.lock();
-        Overlay.show();
-        this.spinner.classList.add('is-visible');
+    show() {
+        overlay.lock();
+        overlay.show();
+        spinner.classList.add('is-visible');
     }
 
-    static hide() {
-        Overlay.hide();
-        this.spinner.classList.remove('is-visible');
+    hide() {
+        overlay.hide();
+        spinner.classList.remove('is-visible');
     }
 }

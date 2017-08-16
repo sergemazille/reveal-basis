@@ -11,12 +11,12 @@ import { Drop } from './components/drop';
 
 // unique components creation
 new Overlay().init();
+new Spinner();
 
 // components initialization
 Above.init();
 Notification.init();
 Drop.init();
-Spinner.init();
 
 // add components to global scope
 module.exports = {
