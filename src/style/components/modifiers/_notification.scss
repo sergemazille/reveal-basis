@@ -1,56 +1,79 @@
 .notification {
-    
-    // position
-    @mixin position($position: "left") {
-        
-        align-self: flex-start;
 
-        @if $position == "right" { align-self: flex-end; } // override default
-
-        #{$position}: calc(-100% - #{$notifications-container-padding});
-        opacity: 0;
-        
-        &.is-visible {
-            #{$position}: 0;
-            opacity: 1;
-        }
-    }
-
-    // transition
-    @mixin transition($direction: "left") {
-
-        @include position($direction);
-        
-        transition: #{$direction} $notification-transition-duration $notification-transition-timing-function,
-        opacity $notification-transition-duration $notification-transition-timing-function,
-        visibility 0s $notification-transition-duration; // visibility toggle is delayed after element has been hidden
-        will-change: #{$direction}, opacity, visibility;
-
-        &.is-visible {
-            transition: #{$direction} $notification-transition-duration $notification-transition-timing-function,
-            opacity $notification-transition-duration $notification-transition-timing-function;
-            will-change: #{$direction}, opacity;
-        }
-    }
-
-    &.--position-left, &.--position-right, &.--transition-left, &.--transition-right {
+    // change default core attributes when there is a modifier
+    &[class*='--'] {
         display: block;
         position: relative;
     }
 
+    // position
+    @mixin position($position: 'left') {
+
+        &.--width-auto {
+            // positioning
+            align-self: flex-start;
+            @if $position == 'right' { align-self: flex-end; } // override default
+        }
+
+        #{$position}: calc(-100% - #{$notifications-container-padding});
+
+        &.is-visible {
+            #{$position}: 0;
+        }
+    }
+
+    // transitions
+    // ===========
+
+    // slide transition
+    @mixin slide($position: 'left') {
+
+        #{$position}: calc(-100% - #{$notifications-container-padding});
+
+        transition: #{$position} $notification-transition-duration $notification-transition-timing-function,
+        visibility 0s $notification-transition-duration; // visibility toggle is delayed after element's transition is ended
+        will-change: #{$position}, visibility;
+
+        &.is-visible {
+            #{$position}: 0;
+            transition: #{$position} $notification-transition-duration $notification-transition-timing-function;
+            will-change: #{$position};
+        }
+    }
+
     &.--position-left {
-        @include position("left");
+        @include position('left');
     }
 
     &.--position-right {
-        @include position("right");
+        @include position('right');
     }
 
-    &.--transition-left {
-        @include transition("left");
+    &.--transition-slide {
+
+        // if position is not specified or is left
+        &.--position-left, &:not([class*='--position']) {
+            @include slide('left');
+        }
+
+        // else for positioning on the right hand side
+        &.--position-right {
+            @include slide('right');
+        }
     }
 
-    &.--transition-right {
-        @include transition("right");
+    &.--transition-fade {
+        opacity: 0;
+
+        transition: opacity $notification-transition-duration $notification-transition-timing-function,
+        visibility 0s $notification-transition-duration; // visibility toggle is delayed after element's transition is ended
+        will-change: opacity, visibility;
+
+        &.is-visible {
+
+            opacity: 1;
+            transition: opacity $notification-transition-duration $notification-transition-timing-function;
+            will-change: opacity;
+        }
     }
 }

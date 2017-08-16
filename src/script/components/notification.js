@@ -14,37 +14,42 @@ export class Notification {
     // dynamic creation of a notification (after DOM is rendered)
     static create({
         // options defaults
-        message = "",
+        message = '',
         classes = [],
-        position = "left",
-        transition = true,
+        position = 'left',
+        transitions = ['slide', 'fade'],
         duration = 0,
         dismissOnClick = true
     }) {
 
-        // set up notification
+        // global notification setup
         let newNotification = document.createElement('div');
         newNotification.innerHTML = message;
         newNotification.classList.add('notification');
 
-        // add transition or just position regarding parameter options
-        if (transition) {
-            newNotification.classList.add(`--transition-${position}`);
-        } else {
-            newNotification.classList.add(`--position-${position}`);
+        // options setup
+
+        // position
+        newNotification.classList.add(`--position-${position}`);
+
+        // transitions
+        if (transitions) {
+            transitions.forEach(function(transition) {
+                newNotification.classList.add(`--transition-${transition}`);
+            });
         }
 
-        // make dismissible on click regarding parameter option
+        // dismissOnClick
         if (dismissOnClick) {
             newNotification.classList.add('dismiss');
         }
 
-        // add custom classes
+        // custom classes
         [...classes].forEach(function(className) {
             newNotification.classList.add(className);
         });
 
-        // set notification duration if need be
+        // notification duration
         if(duration) {
             setDuration(newNotification, duration);
         }
