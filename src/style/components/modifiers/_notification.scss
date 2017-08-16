@@ -1,40 +1,56 @@
 .notification {
-
-    // animation
-    @mixin notification-animation($direction: "left") {
-
+    
+    // position
+    @mixin position($position: "left") {
+        
         align-self: flex-start;
 
-        @if $direction == "right" { align-self: flex-end; } // override default
+        @if $position == "right" { align-self: flex-end; } // override default
 
-        #{$direction}: calc(-100% - #{$notifications-container-padding});
+        #{$position}: calc(-100% - #{$notifications-container-padding});
         opacity: 0;
+        
+        &.is-visible {
+            #{$position}: 0;
+            opacity: 1;
+        }
+    }
 
+    // transition
+    @mixin transition($direction: "left") {
+
+        @include position($direction);
+        
         transition: #{$direction} $notification-transition-duration $notification-transition-timing-function,
         opacity $notification-transition-duration $notification-transition-timing-function,
         visibility 0s $notification-transition-duration; // visibility toggle is delayed after element has been hidden
         will-change: #{$direction}, opacity, visibility;
 
         &.is-visible {
-            #{$direction}: 0;
-            opacity: 1;
-
             transition: #{$direction} $notification-transition-duration $notification-transition-timing-function,
             opacity $notification-transition-duration $notification-transition-timing-function;
             will-change: #{$direction}, opacity;
         }
     }
 
-    &.notification-left, &.notification-right {
+    &.--position-left, &.--position-right, &.--transition-left, &.--transition-right {
         display: block;
         position: relative;
     }
 
-    &.notification-left {
-        @include notification-animation("left");
+    &.--position-left {
+        @include position("left");
     }
 
-    &.notification-right {
-        @include notification-animation("right");
+    &.--position-right {
+        @include position("right");
+    }
+
+    &.--transition-left {
+        @include transition("left");
+    }
+
+    &.--transition-right {
+        @include transition("right");
     }
 }

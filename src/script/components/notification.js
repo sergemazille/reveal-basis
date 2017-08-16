@@ -1,3 +1,5 @@
+import * as utils from '../utils';
+
 // default duration used for notifications already on DOM when the page is loaded
 const NOTIFICATION_DURATION = 6000; // in milliseconds (0 for infinite duration)
 
@@ -15,26 +17,32 @@ export class Notification {
         message = "",
         classes = [],
         position = "left",
+        transition = true,
         duration = 0,
-        dismissible = true
+        dismissOnClick = true
     }) {
 
         // set up notification
         let newNotification = document.createElement('div');
         newNotification.innerHTML = message;
-        newNotification.classList.add('notification', `notification-${position}`);
+        newNotification.classList.add('notification');
+
+        // add transition or just position regarding parameter options
+        if (transition) {
+            newNotification.classList.add(`--transition-${position}`);
+        } else {
+            newNotification.classList.add(`--position-${position}`);
+        }
+
+        // make dismissible on click regarding parameter option
+        if (dismissOnClick) {
+            newNotification.classList.add('dismiss');
+        }
 
         // add custom classes
         [...classes].forEach(function(className) {
             newNotification.classList.add(className);
         });
-
-        // add dismiss 'button' if need be
-        if(dismissible) {
-            let dismissButton = document.createElement('span');
-            dismissButton.classList.add('dismiss');
-            newNotification.appendChild(dismissButton);
-        }
 
         // set notification duration if need be
         if(duration) {
@@ -90,7 +98,13 @@ function removeFromDom(notification) {
 
     // hide animation thanks to css class
     notification.classList.remove('is-visible');
-    notification.addEventListener('transitionend', remove);
+
+    // if notification has a transition, wait for the transition to end before removing from DOM
+    if (hasTransition(notification)) {
+        notification.addEventListener('transitionend', remove);
+    } else {
+        remove();
+    }
 
     // executed after animation transition
     function remove() {
@@ -109,22 +123,31 @@ function addToDom(notification) {
     let notificationsContainer = document.querySelector('.notifications');
     notificationsContainer.appendChild(notification);
 
-    // display notifications (with a small delay to allow animation to kick off)
-    setTimeout(function() {
-        displayNotification();
-    }, 150);
-
-    // display notification thanks to css class
-    function displayNotification() {
+    // display notification (with a small delay if it has a transition to allow animation kick off)
+    if (hasTransition(notification)) {
+        setTimeout(function() {
+            notification.classList.add('is-visible');
+        }, 100);
+    } else {
         notification.classList.add('is-visible');
     }
 }
 
 // notification will be removed after some duration (unless duration is set to '0')
 function setDuration(notification, duration = NOTIFICATION_DURATION) {
-    if(duration) {
+
+    // set notification stickiness if need be
+    if (notification.classList.contains('--sticky')) {
+        duration = 0;
+    }
+
+    if (duration) {
         setTimeout(function() {
             removeFromDom(notification)
         }, duration);
     }
+}
+
+function hasTransition(notification) {
+    return utils.classListIncludes(notification.classList, '--transition')
 }
