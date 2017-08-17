@@ -15,6 +15,7 @@
 .notification {
     display: none;
     visibility: hidden;
+    position: relative;
 
     pointer-events: auto; // override parent's behaviour
 

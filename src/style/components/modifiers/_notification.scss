@@ -1,10 +1,17 @@
 .notification {
 
+    // global
+    // ======
+
     // change default core attributes when there is a modifier
     &[class*='--'] {
         display: block;
-        position: relative;
+        visibility: visible;
     }
+
+
+    // mixins (have to be declared before being used)
+    // ==============================================
 
     // position
     @mixin position($position: 'left') {
@@ -22,23 +29,25 @@
         }
     }
 
-    // transitions
-    // ===========
-
-    // slide transition
+    // slide
     @mixin slide($position: 'left') {
 
         #{$position}: calc(-100% - #{$notifications-container-padding});
 
-        transition: #{$position} $notification-transition-duration $notification-transition-timing-function,
-        visibility 0s $notification-transition-duration; // visibility toggle is delayed after element's transition is ended
-        will-change: #{$position}, visibility;
+        transition: all $notification-transition-duration $notification-transition-timing-function;
 
         &.is-visible {
             #{$position}: 0;
-            transition: #{$position} $notification-transition-duration $notification-transition-timing-function;
-            will-change: #{$position};
+            transition: all $notification-transition-duration $notification-transition-timing-function;
         }
+    }
+
+
+    // positions
+    // =========
+
+    &.--width-auto {
+        align-self: flex-start;
     }
 
     &.--position-left {
@@ -49,6 +58,11 @@
         @include position('right');
     }
 
+
+    // transitions
+    // ===========
+
+    // slide transition builds upon position modifier
     &.--transition-slide {
 
         // if position is not specified or is left
@@ -62,22 +76,14 @@
         }
     }
 
+    // fade transition
     &.--transition-fade {
         opacity: 0;
-
-        transition: opacity $notification-transition-duration $notification-transition-timing-function,
-        visibility 0s $notification-transition-duration; // visibility toggle is delayed after element's transition is ended
-        will-change: opacity, visibility;
+        transition: all $notification-transition-duration $notification-transition-timing-function;
 
         &.is-visible {
-
             opacity: 1;
-            transition: opacity $notification-transition-duration $notification-transition-timing-function;
-            will-change: opacity;
+            transition: all $notification-transition-duration $notification-transition-timing-function;
         }
-    }
-
-    &.--width-auto {
-        align-self: flex-start;
     }
 }
