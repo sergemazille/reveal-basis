@@ -19,6 +19,7 @@ export class Notification {
             position = 'left',
             transitions = ['slide', 'fade'],
             duration = 0,
+            speed = 300,
             dismissOnClick = true
         } = {}) {
 
@@ -53,6 +54,11 @@ export class Notification {
         [...classes].forEach(function(className) {
             newNotification.classList.add(className);
         });
+
+        // transition speed
+        if (speed) {
+            newNotification.style.transitionDuration = utils.getCssDuration(speed);
+        }
 
         // notification duration
         if(duration) {
