@@ -23,7 +23,7 @@ Table of contents
 <p data-height="265" data-theme-id="0" data-slug-hash="MvENGb" data-default-tab="html,result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Above - Core" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/MvENGb/">Reveal Basis - Above - Core</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-## Above Modifiers
+## Above: Modifiers
 
 ### Transitions
 <p data-height="265" data-theme-id="0" data-slug-hash="QMqXaJ" data-default-tab="html,result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Above - Modifiers - transitions" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/QMqXaJ/">Reveal Basis - Above - Modifiers - transitions</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
@@ -47,4 +47,10 @@ Table of contents
 
 ## Notification: Core
 <p data-height="265" data-theme-id="0" data-slug-hash="prajPL" data-default-tab="html,result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Notification - Core" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/prajPL/">Reveal Basis - Notification - Core</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+## Notification: Modifiers
+
+### Width and position
+<p data-height="265" data-theme-id="0" data-slug-hash="ZJryjq" data-default-tab="html,result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Notification - Modifiers - position and width" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/ZJryjq/">Reveal Basis - Notification - Modifiers - position and width</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>

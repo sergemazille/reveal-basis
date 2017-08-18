@@ -171,7 +171,6 @@ Let's see some 'core' examples (just wait for the 'modifier' section for funnier
 </div>
 ```
 
-[> Play with the example](https://sergemazille.github.io/reveal-basis#core)
 
 #### Trigger an `.above` with an anchor, through a `[href]` attribute
 ```html
@@ -184,7 +183,6 @@ Let's see some 'core' examples (just wait for the 'modifier' section for funnier
     <p>Lorem ipsum dolor sit amet...</p>
 </div>
 ```
-[> Play with the example](https://sergemazille.github.io/reveal-basis#core)
 
 #### Trigger an `.above` with a button inside an `.above-group` element
 ```html
@@ -201,7 +199,7 @@ Let's see some 'core' examples (just wait for the 'modifier' section for funnier
 
 </div>
 ```
-[> Play with the example](https://sergemazille.github.io/reveal-basis#core)
+[> Play with the examples](https://sergemazille.github.io/reveal-basis#core)
 
 ### Above: Modifiers
 Default `.above` behaviour can be extended by adding some modifier classes.
@@ -217,7 +215,7 @@ There is also a `.--transition-scale` modifier:
 
 `<div class="above --transition-scale">`
 
-[> Play with the example](https://sergemazille.github.io/reveal-basis#transitions)
+[> Play with the examples](https://sergemazille.github.io/reveal-basis#transitions)
 
 #### Modal dialog box
 
@@ -229,7 +227,7 @@ Its dimensions are shrinked to half its width by default:
 It can also leverage a transition modifier:
 `<div class="above --type-modal --transition-top">`
 
-[> Play with the example](https://sergemazille.github.io/reveal-basis#modals)
+[> Play with the examples](https://sergemazille.github.io/reveal-basis#modals)
 
 #### Drawer
 
@@ -242,13 +240,13 @@ Notes:
 
 - If [you are overriding default variables](#override-default-styles), you can change the default dimension set by `$above-drawer-dimension` variable.
 
-[> Play with the example](https://sergemazille.github.io/reveal-basis#drawers)
+[> Play with the examples](https://sergemazille.github.io/reveal-basis#drawers)
 
 #### Customization examples
 
 You can build upon the `.above` element and its modifiers to create your own custom elements.
 
-[> Play with the example](https://sergemazille.github.io/reveal-basis#customization-examples)
+[> Play with the examples](https://sergemazille.github.io/reveal-basis#customization-examples)
 
 
 ### Above: Note
@@ -275,4 +273,16 @@ eg. User is welcomed on their profile page after a successful login validation:
 
 `<div class="notification">Welcome on your profile page</div>`
 
-[> Play with the example](https://sergemazille.github.io/reveal-basis)
+To display a notification on page load, just add the `.notification` class on one of your template's element.
+It will 'convert' it to a notification along with all its content, including buttons, links, images, etc.
+
+[> Play with the example](https://sergemazille.github.io/reveal-basis#notification-core)
+
+##### Static notifications: modifiers
+
+A simple block appearing on top of your content being kind of limited, Reveal Basis supplies some useful modifiers.
+
+- position and width:
+
+[> Play with the examples](https://sergemazille.github.io/reveal-basis#width-and-position)
+
