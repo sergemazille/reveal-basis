@@ -277,13 +277,15 @@ To display a notification on page load, just add the `.notification` class on on
 It will 'convert' it to a notification along with all its content, including buttons, links, images, etc.
 
 - options :
-To make it dismissible (with a click), just add `.dismiss` class along.
+To make it dismissible (with a click), just add the `.dismiss` class directly on the notification or on a trigger element inside it.
 
-`<div class="notification dismiss">Welcome on your profile page</div>`
+`<div class="notification dismiss">Click anywhere to dismiss me</div>`
 
-To make is stick, add the `.--sticky` class, it will remove the default duration
+`<div class="notification">Click <span class="dismiss">here</span> to dismiss me</div>`
 
-`<div class="notification --sticky">Welcome on your profile page</div>`
+To make the notification stick, add the `.--sticky` class, it will remove the default duration.
+
+`<div class="notification --sticky">I won't disappear... like ever...</div>`
 
 [> Play with the examples](https://sergemazille.github.io/reveal-basis#notification-core)
 

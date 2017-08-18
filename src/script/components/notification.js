@@ -107,12 +107,15 @@ function registerEvents() {
     document.querySelector('body').addEventListener('click', function(e) {
         let trigger = e.target;
 
+        let dismissibleNotification = trigger.closest('.notification').classList.contains('dismiss');
+        let dismissTrigger = trigger.classList.contains('dismiss') && trigger.closest('.notification');
+
 
         // close the notification
         // ======================
 
         // dismiss button has to be nested inside the notification
-        if(trigger.classList.contains('dismiss') && trigger.closest('.notification')) {
+        if(dismissibleNotification || dismissTrigger) {
             let notification = trigger.closest('.notification');
             removeFromDom(notification);
         }
