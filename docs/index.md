@@ -55,6 +55,10 @@ Table of contents
 <p data-height="265" data-theme-id="0" data-slug-hash="ZJryjq" data-default-tab="html,result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Notification - Modifiers - position and width" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/ZJryjq/">Reveal Basis - Notification - Modifiers - position and width</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-### Transition: Slide
+### Transition: slide
 <p data-height="265" data-theme-id="0" data-slug-hash="OjQjJO" data-default-tab="html,result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Notification - Modifiers - Transitions: slide" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/OjQjJO/">Reveal Basis - Notification - Modifiers - Transitions: slide</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+### Transition: fade
+<p data-height="265" data-theme-id="0" data-slug-hash="LjQjry" data-default-tab="html,result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Notification - Modifiers - Transitions: fade" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/LjQjry/">Reveal Basis - Notification - Modifiers - Transitions: fade</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>

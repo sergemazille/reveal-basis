@@ -298,3 +298,7 @@ A simple block appearing on top of your content being kind of limited, Reveal Ba
 - transition - slide:
 
 [> Play with the examples](https://sergemazille.github.io/reveal-basis#transition-slide)
+
+- transition - fade:
+
+[> Play with the examples](https://sergemazille.github.io/reveal-basis#transition-fade)
