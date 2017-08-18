@@ -11,23 +11,28 @@ export class Notification {
         registerEvents();
     }
 
-    // dynamic creation of a notification (after DOM is rendered)
-    static create({
-        // options defaults
-        message = '',
-        classes = [],
-        position = 'left',
-        transitions = ['slide', 'fade'],
-        duration = 0,
-        dismissOnClick = true
-    }) {
+    // create a notification manually
+    static create(message = '', {
+
+            // options defaults
+            classes = [],
+            position = 'left',
+            transitions = ['slide', 'fade'],
+            duration = 0,
+            dismissOnClick = true
+        } = {}) {
+
 
         // global notification setup
+        // =========================
+
         let newNotification = document.createElement('div');
         newNotification.innerHTML = message;
         newNotification.classList.add('notification');
 
+
         // options setup
+        // =============
 
         // position
         newNotification.classList.add(`--position-${position}`);
@@ -54,7 +59,10 @@ export class Notification {
             setDuration(newNotification, duration);
         }
 
+
         // add notification to view
+        // ========================
+
         addToDom(newNotification);
     }
 }
@@ -88,8 +96,9 @@ function registerEvents() {
     document.querySelector('body').addEventListener('click', function(e) {
         let trigger = e.target;
 
-        // closing the notification
-        // ========================
+
+        // close the notification
+        // ======================
 
         // dismiss button has to be nested inside the notification
         if(trigger.classList.contains('dismiss') && trigger.closest('.notification')) {

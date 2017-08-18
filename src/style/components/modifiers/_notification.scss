@@ -22,8 +22,6 @@
             @if $position == 'right' { align-self: flex-end; } // override default
         }
 
-        #{$position}: calc(-100% - #{$notifications-container-padding});
-
         &.is-visible {
             #{$position}: 0;
         }
