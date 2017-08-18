@@ -20,7 +20,8 @@ export class Notification {
             transitions = ['slide', 'fade'],
             duration = 0,
             speed = 300,
-            dismissOnClick = true
+            dismissOnClick = true,
+            width= "auto"
         } = {}) {
 
 
@@ -65,6 +66,10 @@ export class Notification {
             setDuration(newNotification, duration);
         }
 
+        // width (available options: "auto")
+        if (width === 'auto') {
+            newNotification.classList.add('--width-auto');
+        }
 
         // add notification to view
         // ========================
