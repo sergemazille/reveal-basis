@@ -167,7 +167,7 @@ Let's see some 'core' examples (just wait for the 'modifier' section for funnier
 </div>
 ```
 
-[> Play with the example](https://sergemazille.github.io/reveal-basis#trigger-an-above-with-a-button-through-a-data-target-attribute)
+[> Play with the example](https://sergemazille.github.io/reveal-basis#core)
 
 #### Trigger an `.above` with an anchor, through a `[href]` attribute
 ```html
@@ -180,7 +180,7 @@ Let's see some 'core' examples (just wait for the 'modifier' section for funnier
     <p>Lorem ipsum dolor sit amet...</p>
 </div>
 ```
-[> Play with the example](https://sergemazille.github.io/reveal-basis#trigger-an-above-with-an-anchor-through-a-href-attribute)
+[> Play with the example](https://sergemazille.github.io/reveal-basis#core)
 
 #### Trigger an `.above` with a button inside an `.above-group` element
 ```html
@@ -197,7 +197,7 @@ Let's see some 'core' examples (just wait for the 'modifier' section for funnier
 
 </div>
 ```
-[> Play with the example](https://sergemazille.github.io/reveal-basis#trigger-an-above-with-a-button-inside-an-above-group-element)
+[> Play with the example](https://sergemazille.github.io/reveal-basis#core)
 
 ### Modifiers
 Default `.above` behaviour can be extended by adding some modifier classes.
