@@ -209,7 +209,7 @@ Reveal Basis has a few bonus classes to make an `.above` element slide from one 
 `<div class="above --transition-left">`
 
 
-There is also an `.--transition-scale` modifier:
+There is also a `.--transition-scale` modifier:
 
 `<div class="above --transition-scale">`
 
