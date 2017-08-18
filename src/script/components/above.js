@@ -16,7 +16,7 @@ export class Above {
         if (! above.classList.contains('--no-overlay')) {
 
             // lock overlay if need be
-            if (above.classList.contains('is-locked')) {
+            if (above.classList.contains('--lock-overlay')) {
                 this.overlay.lock();
             }
 

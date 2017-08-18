@@ -142,13 +142,13 @@ The triggering element (button or anchor) needs to contain `data-toggle="above"`
 An eventual closing element needs to have the `.dismiss` class and to be inside the `.above` element. It can only be triggered with a 'click' event.
 
 #### Options
-- '.no-overlay'
+- '.--no-overlay'
 
 By default, triggering an `.above` element will also trigger the page's `#overlay` element. This behaviour can been changed by adding a `.--no-overlay` class on the `.above` element.
 
-- '.is-locked'
+- '.--lock-overlay'
 
-The `.above` element is dismissed when the page's `#overlay` is clicked. To change this behaviour, just add a `.is-locked` class on the `.above` element.
+The `.above` element is dismissed when the page's `#overlay` is clicked. To change this behaviour, just add a `.--lock-overlay` class on the `.above` element.
 
 Let's see some 'core' examples (just wait for the 'modifier' section for funnier stuff):
 #### Trigger an `.above` with a button, through a `[data-target]` attribute
