@@ -293,14 +293,32 @@ To make the notification stick, add the `.--sticky` class, it will remove the de
 
 A simple block appearing on top of your content being kind of limited, Reveal Basis supplies some useful modifiers.
 
-- position and width:
+- position and width (`--position-right`, `--width-auto`):
 
 [> Play with the examples](https://sergemazille.github.io/reveal-basis#width-and-position)
 
-- transition - slide:
+- transition - slide (`--transition-slide`):
 
 [> Play with the examples](https://sergemazille.github.io/reveal-basis#transition-slide)
 
-- transition - fade:
+- transition - fade (`--transition-fade`):
 
 [> Play with the examples](https://sergemazille.github.io/reveal-basis#transition-fade)
+
+#### Scripted notifications
+
+The typical use for a scripted `.notification` is to give a direct feedback to the user (without redirection or page reload).
+
+eg. User tried to submit a form but didn't filled a required field.
+
+The notification is triggered via javascript, using the library `rb` (**r**eveal **b**asis) global variable.
+```typescript
+<script>
+    [... (failed form validation)]
+
+    rb.notification.create("Please fill in all the required fields");
+</script>
+```
+
+[> Play with the example](https://sergemazille.github.io/reveal-basis#scripted-notification)
+
