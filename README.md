@@ -40,6 +40,8 @@ Table of Content
 	- [Notification](#notification)
 		- [Notification: Usage](#notification-usage)
 			- [Static notifications](#static-notifications)
+				- [Static notifications: modifiers](#static-notifications-modifiers)
+			- [Scripted notifications](#scripted-notifications)
 
 <!-- /TOC -->
 

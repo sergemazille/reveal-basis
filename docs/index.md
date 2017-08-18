@@ -5,13 +5,18 @@ Table of contents
 
 - [Above component](#above-component)
 	- [Above: Core](#above-core)
-	- [Above Modifiers](#above-modifiers)
+	- [Above: Modifiers](#above-modifiers)
 		- [Transitions](#transitions)
 		- [Modals](#modals)
 		- [Drawers](#drawers)
 		- [Customization examples](#customization-examples)
 - [Notification component](#notification-component)
 	- [Notification: Core](#notification-core)
+	- [Notification: Modifiers](#notification-modifiers)
+		- [Width and position](#width-and-position)
+		- [Transition: slide](#transition-slide)
+		- [Transition: fade](#transition-fade)
+	- [Scripted Notification](#scripted-notification)
 
 <!-- /TOC -->
 
