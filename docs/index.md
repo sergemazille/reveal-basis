@@ -4,12 +4,14 @@ Table of contents
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Above component](#above-component)
-    - [Core](#core)
-    - [Modifiers](#modifiers)
-        - [Transitions](#transitions)
-        - [Modals](#modals)
-        - [Drawers](#drawers)
-        - [Customization examples](#customization-examples)
+	- [Above - Core](#above-core)
+	- [Above Modifiers](#above-modifiers)
+		- [Transitions](#transitions)
+		- [Modals](#modals)
+		- [Drawers](#drawers)
+		- [Customization examples](#customization-examples)
+- [Notification component](#notification-component)
+	- [Notification - Core](#notification-core)
 
 <!-- /TOC -->
 
@@ -17,11 +19,11 @@ Table of contents
 
 `above` component's purpose is to display an element above the current page content (imagine a modal dialog box or a drawer type sliding menu).
 
-## Core
+## Above - Core
 <p data-height="265" data-theme-id="0" data-slug-hash="MvENGb" data-default-tab="html,result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Above - Core" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/MvENGb/">Reveal Basis - Above - Core</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-## Modifiers
+## Above Modifiers
 
 ### Transitions
 <p data-height="265" data-theme-id="0" data-slug-hash="QMqXaJ" data-default-tab="html,result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Above - Modifiers - transitions" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/QMqXaJ/">Reveal Basis - Above - Modifiers - transitions</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
@@ -43,6 +45,6 @@ Table of contents
 
 `notification`s are alerting components types. A notification can be displayed as a feedback when the website user has performed an operation (eg. successful login).
 
-## Core
+## Notification - Core
 <p data-height="265" data-theme-id="0" data-slug-hash="prajPL" data-default-tab="html,result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Notification - Core" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/prajPL/">Reveal Basis - Notification - Core</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>

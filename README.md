@@ -26,19 +26,19 @@ Table of Content
 		- [Override default styles](#override-default-styles)
 - [Components](#components)
 	- [Above](#above)
-		- [Usage](#usage)
-			- [Options](#options)
+		- [Above - Usage](#above-usage)
+			- [Above - Options](#above-options)
 			- [Trigger an `.above` with a button, through a `[data-target]` attribute](#trigger-an-above-with-a-button-through-a-data-target-attribute)
 			- [Trigger an `.above` with an anchor, through a `[href]` attribute](#trigger-an-above-with-an-anchor-through-a-href-attribute)
 			- [Trigger an `.above` with a button inside an `.above-group` element](#trigger-an-above-with-a-button-inside-an-above-group-element)
-		- [Modifiers](#modifiers)
+		- [Above - Modifiers](#above-modifiers)
 			- [Transitions](#transitions)
 			- [Modal dialog box](#modal-dialog-box)
 			- [Drawer](#drawer)
 			- [Customization examples](#customization-examples)
-		- [Note](#note)
+		- [Above - Note](#above-note)
 	- [Notification](#notification)
-		- [Usage](#usage)
+		- [Notification - Usage](#notification-usage)
 			- [Static notifications](#static-notifications)
 
 <!-- /TOC -->
@@ -139,13 +139,13 @@ rb.overlay.show();
 
 `above` component's purpose is to display an element above the current page content (imagine a modal dialog box or a drawer type sliding menu).
 
-### Usage
+### Above - Usage
 
 The triggering element (button or anchor) needs to contain `data-toggle="above"` attribute.
 
 An eventual closing element needs to have the `.dismiss` class and to be inside the `.above` element. It can only be triggered with a 'click' event.
 
-#### Options
+#### Above - Options
 - `.--no-overlay`
 
 By default, triggering an `.above` element will also trigger the page's `#overlay` element. This behaviour can been changed by adding a `.--no-overlay` class on the `.above` element.
@@ -203,7 +203,7 @@ Let's see some 'core' examples (just wait for the 'modifier' section for funnier
 ```
 [> Play with the example](https://sergemazille.github.io/reveal-basis#core)
 
-### Modifiers
+### Above - Modifiers
 Default `.above` behaviour can be extended by adding some modifier classes.
 
 #### Transitions
@@ -251,7 +251,7 @@ You can build upon the `.above` element and its modifiers to create your own cus
 [> Play with the example](https://sergemazille.github.io/reveal-basis#customization-examples)
 
 
-### Note
+### Above - Note
 
 If you are overriding default variables, be aware that global padding of `above` component has to be explicitly given through `$above-padding` variable as it is needed for positioning calculation.
 
@@ -263,7 +263,7 @@ The visibility state modifier class for an `.above` element is `.is-visible`.
 
 For example, a notification can be displayed as a feedback when the website user has performed an operation (eg. successful login).
 
-### Usage
+### Notification - Usage
 
 Notifications can be used either after a page load (`.notification`s already on DOM) or triggered manually (eg. after a user has clicked on something)
 
