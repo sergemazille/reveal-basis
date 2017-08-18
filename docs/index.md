@@ -38,3 +38,11 @@ Table of contents
 ### Customization examples
 <p data-height="265" data-theme-id="0" data-slug-hash="gxXpxP" data-default-tab="html,result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Above - themes examples" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/gxXpxP/">Reveal Basis - Above - themes examples</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+# Notification component
+
+`notification`s are alerting components types. A notification can be displayed as a feedback when the website user has performed an operation (eg. successful login).
+
+## Core
+<p data-height="265" data-theme-id="0" data-slug-hash="prajPL" data-default-tab="html,result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Notification - Core" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/prajPL/">Reveal Basis - Notification - Core</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>

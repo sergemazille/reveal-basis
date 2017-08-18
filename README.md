@@ -252,3 +252,25 @@ You can build upon the `.above` element and its modifiers to create your own cus
 If you are overriding default variables, be aware that global padding of `above` component has to be explicitly given through `$above-padding` variable as it is needed for positioning calculation.
 
 The visibility state modifier class for an `.above` element is `.is-visible`.
+
+## Notification
+
+`notification`s are alerting components types.
+
+For example, a notification can be displayed as a feedback when the website user has performed an operation (eg. successful login).
+
+### Usage
+
+Notifications can be used either after a page load (`.notification`s already on DOM) or triggered manually (eg. after a user has clicked on something)
+
+#### Static notifications
+
+The typical use for a static `.notification` is when a user has just been redirected to a new page after some kind of event.
+
+eg. User is welcomed on their profile page after a successful login validation:
+
+`<div class="notification">Welcome on your profile page</div>`
+
+[> Play with the example](https://sergemazille.github.io/reveal-basis)
+
+
