@@ -18,7 +18,7 @@ Table of contents
 `above` component's purpose is to display an element above the current page content (imagine a modal dialog box or a drawer type sliding menu).
 
 ## Core
-<p data-height="265" data-theme-id="0" data-slug-hash="MvENGb" data-default-tab="html,result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Above - Core - trigger button" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/MvENGb/">Reveal Basis - Above - Core - trigger button</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="265" data-theme-id="0" data-slug-hash="MvENGb" data-default-tab="html,result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Above - Core" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/MvENGb/">Reveal Basis - Above - Core</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 ## Modifiers
