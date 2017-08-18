@@ -27,6 +27,7 @@ Table of Content
 - [Components](#components)
 	- [Above](#above)
 		- [Usage](#usage)
+			- [Options](#options)
 			- [Trigger an `.above` with a button, through a `[data-target]` attribute](#trigger-an-above-with-a-button-through-a-data-target-attribute)
 			- [Trigger an `.above` with an anchor, through a `[href]` attribute](#trigger-an-above-with-an-anchor-through-a-href-attribute)
 			- [Trigger an `.above` with a button inside an `.above-group` element](#trigger-an-above-with-a-button-inside-an-above-group-element)
@@ -36,6 +37,9 @@ Table of Content
 			- [Drawer](#drawer)
 			- [Customization examples](#customization-examples)
 		- [Note](#note)
+	- [Notification](#notification)
+		- [Usage](#usage)
+			- [Static notifications](#static-notifications)
 
 <!-- /TOC -->
 
@@ -272,5 +276,3 @@ eg. User is welcomed on their profile page after a successful login validation:
 `<div class="notification">Welcome on your profile page</div>`
 
 [> Play with the example](https://sergemazille.github.io/reveal-basis)
-
-
