@@ -276,7 +276,16 @@ eg. User is welcomed on their profile page after a successful login validation:
 To display a notification on page load, just add the `.notification` class on one of your template's element.
 It will 'convert' it to a notification along with all its content, including buttons, links, images, etc.
 
-[> Play with the example](https://sergemazille.github.io/reveal-basis#notification-core)
+- options :
+To make it dismissible (with a click), just add `.dismiss` class along.
+
+`<div class="notification dismiss">Welcome on your profile page</div>`
+
+To make is stick, add the `.--sticky` class, it will remove the default duration
+
+`<div class="notification --sticky">Welcome on your profile page</div>`
+
+[> Play with the examples](https://sergemazille.github.io/reveal-basis#notification-core)
 
 ##### Static notifications: modifiers
 
@@ -286,3 +295,6 @@ A simple block appearing on top of your content being kind of limited, Reveal Ba
 
 [> Play with the examples](https://sergemazille.github.io/reveal-basis#width-and-position)
 
+- transition - slide:
+
+[> Play with the examples](https://sergemazille.github.io/reveal-basis#transition-slide)
