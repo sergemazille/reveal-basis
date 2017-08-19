@@ -283,7 +283,7 @@ eg. User is welcomed on their profile page after a successful login validation:
 To display a notification on page load, just add the `.notification` class on one of your template's element.
 It will 'convert' it to a notification along with all its content, including buttons, links, images, etc.
 
-<span style="text-decoration: underline;">options :</span>
+<span style="text-decoration: underline;">options:</span>
 
 To make it dismissible (with a click), just add the `.dismiss` class directly on the notification or on a trigger element inside it.
 
