@@ -17,11 +17,11 @@ export class Notification {
             // options defaults
             classes = [],
             position = 'left',
+            width= 'auto',
             transitions = ['slide', 'fade'],
-            duration = 0,
+            duration = 6000,
             speed = 300,
             dismissOnClick = true,
-            width= "auto"
         } = {}) {
 
 

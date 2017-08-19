@@ -17,6 +17,7 @@ Table of contents
 		- [Transition: slide](#transition-slide)
 		- [Transition: fade](#transition-fade)
 	- [Scripted Notification](#scripted-notification)
+		- [Scripted Notification: options](#scripted-notification-options)
 
 <!-- /TOC -->
 
@@ -69,5 +70,9 @@ Table of contents
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 ## Scripted Notification
-<p data-height="320" data-theme-id="0" data-slug-hash="qXxpMr" data-default-tab="css,result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Notification - Scripted" data-preview="true" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/qXxpMr/">Reveal Basis - Notification - Scripted</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="320" data-theme-id="0" data-slug-hash="qXxpMr" data-default-tab="result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Notification - Scripted" data-preview="true" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/qXxpMr/">Reveal Basis - Notification - Scripted</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+### Scripted Notification: options
+<p data-height="320" data-theme-id="0" data-slug-hash="yovQyo" data-default-tab="result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Notification - Scripted - options" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/yovQyo/">Reveal Basis - Notification - Scripted - options</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
