@@ -1,6 +1,8 @@
 Reveal Basis
 ============
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Reveal Basis is a 'no dependencies' UI Kit which provides a set of tools to ease the front end developer job.
 
 It aims to help with DOM elements that have to be shown/hidden (spinner, modals, notifications, etc.) by providing basis toggling and triggering mechanism.
