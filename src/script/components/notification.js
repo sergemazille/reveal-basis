@@ -107,7 +107,8 @@ function registerEvents() {
     document.querySelector('body').addEventListener('click', function(e) {
         let trigger = e.target;
 
-        let dismissibleNotification = trigger.closest('.notification').classList.contains('dismiss');
+        let closestNotification = trigger.closest('.notification');
+        let dismissibleNotification = closestNotification ? closestNotification.classList.contains('dismiss') : false;
         let dismissTrigger = trigger.classList.contains('dismiss') && trigger.closest('.notification');
 
 
