@@ -330,7 +330,7 @@ The notification is triggered via javascript, using the library `rb` (**r**eveal
 
 ##### Notification options
 
-The `create` method accepts an option object as an optional second parameters:
+The `create` method accepts an option object as an optional second parameter:
 
 ```typescript
 <script>
