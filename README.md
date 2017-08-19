@@ -151,19 +151,20 @@ The triggering element (button or anchor) needs to contain `data-toggle="above"`
 An eventual closing element needs to have the `.dismiss` class and to be inside the `.above` element. It can only be triggered with a 'click' event.
 
 #### Above: Options
-- `.--no-overlay`
+**`.--no-overlay`**
 
 By default, triggering an `.above` element will also trigger the page's `#overlay` element. This behaviour can been changed by adding a `.--no-overlay` class on the `.above` element.
 
 `<div class="above --no-overlay">Lorem ipsum...</div>`
 
-- `.--lock-overlay`
+**`.--lock-overlay`**
 
 The `.above` element is dismissed when the page's `#overlay` is clicked. To change this behaviour, just add a `.--lock-overlay` class on the `.above` element.
 
 `<div class="above --lock-overlay">Lorem ipsum...</div>`
 
 Let's see some 'core' examples (just wait for the 'modifier' section for funnier stuff):
+
 #### Trigger an `.above` with a button, through a `[data-target]` attribute
 ```html
 <!-- this button will toggle an '.above' element which 'id' is 'targeted-above' -->
@@ -241,9 +242,10 @@ An 'drawer' type `above` (`.--type-drawer`) could be used to toggle a side menu,
 It has to use a static positioning modifier (eg. `.--position-left`) or a transition one (eg. `.--transition-right`).
 
 Notes:
-- if no positioning modifier is used, an drawer type `above` (`.--type-drawer`) will behave the same as a simple `.above` element.
 
-- If [you are overriding default variables](#override-default-styles), you can change the default dimension set by `$above-drawer-dimension` variable.
+**if no positioning modifier is used**, an drawer type `above` (`.--type-drawer`) will behave the same as a simple `.above` element.
+
+**if [you are overriding default variables](#override-default-styles)**, you can change the default dimension set by `$above-drawer-dimension` variable.
 
 [> Play with the examples](https://sergemazille.github.io/reveal-basis#drawers)
 
@@ -281,7 +283,8 @@ eg. User is welcomed on their profile page after a successful login validation:
 To display a notification on page load, just add the `.notification` class on one of your template's element.
 It will 'convert' it to a notification along with all its content, including buttons, links, images, etc.
 
-- options :
+<span style="text-decoration: underline;">options :</span>
+
 To make it dismissible (with a click), just add the `.dismiss` class directly on the notification or on a trigger element inside it.
 
 `<div class="notification dismiss">Click anywhere to dismiss me</div>`
@@ -298,15 +301,15 @@ To make the notification stick, add the `.--sticky` class, it will remove the de
 
 A simple block appearing on top of your content being kind of limited, Reveal Basis supplies some useful modifiers.
 
-- position and width (`--position-right`, `--width-auto`):
+**position and width (`--position-right`, `--width-auto`):**
 
 [> Play with the examples](https://sergemazille.github.io/reveal-basis#width-and-position)
 
-- transition - slide (`--transition-slide`):
+**transition - slide (`--transition-slide`):**
 
 [> Play with the examples](https://sergemazille.github.io/reveal-basis#transition-slide)
 
-- transition - fade (`--transition-fade`):
+**transition - fade (`--transition-fade`):**
 
 [> Play with the examples](https://sergemazille.github.io/reveal-basis#transition-fade)
 
@@ -348,13 +351,13 @@ The `create` method accepts an option object as an optional second parameter:
 </script>
 ```
 
-- classes: an array of classes (eg. `classes: ["error", "small"]`)
+<span style="text-decoration: underline;">classes:</span> an array of classes (eg. `classes: ["error", "small"]`)
 
 default: empty array
 
 Just pass the css classes you want for your `notification` (eg. "my-warning-notification").
 
-- position: a string, either 'left' or 'right'
+<span style="text-decoration: underline;">position:</span> a string, either 'left' or 'right'
 
 default: "left"
 
@@ -364,14 +367,14 @@ Used with `width: 'auto'`, the notification will stick on the *`position`* side 
 
 Used with `transitions: ['slide']`, the notification will appear on screen from the *`position`*-hand side.
 
-- width: a string, either 'full' or 'auto'
+<span style="text-decoration: underline;">width:</span> a string, either 'full' or 'auto'
 
 default: "auto"
 
 By default a `notification` will be displayed on the entire device screen width ('full').
 If this option is set to 'auto', the `notification` with only be as wide as its content.
 
-- transitions: an array of transition modifiers (eg. `transitions: ["slide", "fade", "insert-your-own"]`)
+<span style="text-decoration: underline;">transitions:</span> an array of transition modifiers (eg. `transitions: ["slide", "fade", "insert-your-own"]`)
 
 default: ["slide", "fade"]
 
@@ -386,10 +389,11 @@ Reveal Basis ships with a few transition modifiers:
 
 You totally can combine all the transitions to achieve the effect you want.
 
-**To create your own transition**, you will have to follow some simple rules:
+<span style="text-decoration: underline;">To create your own transition, you will have to follow some simple rules:</span>
 
-    - its class name has to start with `.--transition-`
-    - define the 'normal' and the 'is-visible' state
+- its class name has to start with `.--transition-`
+
+- define the 'normal' and the 'is-visible' state
 
 ```css
 /* my custom transition */
@@ -403,7 +407,7 @@ You totally can combine all the transitions to achieve the effect you want.
 }
 ```
 
-- duration: an int
+<span style="text-decoration: underline;">duration:</span> an int
 
 default: 6000
 
@@ -411,13 +415,13 @@ Duration is set in milliseconds (`1000` equals 1 second) and represents the time
 
 A duration of `0` will keep the notification indefinitely on screen.
 
-- speed: an int
+<span style="text-decoration: underline;">speed:</span> an int
 
 default: 300
 
 Speed is the transition speed. It will have no effect if no transitions are set `transitions: []`.
 
-- dismissOnClick: a boolean
+<span style="text-decoration: underline;">dismissOnClick:</span> a boolean
 
 default: true
 
