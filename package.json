@@ -1,6 +1,6 @@
 {
   "name": "reveal-basis",
-  "version": "0.12.1",
+  "version": "0.12.2",
   "description": "Reveal Basis UI Kit",
   "main": "dist/reveal-basis.min.js",
   "scripts": {
