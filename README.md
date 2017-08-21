@@ -454,7 +454,7 @@ Let's see some 'core' examples:
 <button data-toggle="drop" data-target="#button-trigger">Trigger drop with a button</button>
 
 <div id="button-trigger" class="drop bg-gray">
-    <p>This drop have been triggered by <b>a button</b></p>
+    <p>This drop has been triggered by <b>a button</b></p>
 </div>
 ```
 
@@ -464,7 +464,7 @@ Let's see some 'core' examples:
 <a data-toggle="drop" href="#anchor-trigger">Trigger drop with an anchor</a>
 
 <div id="anchor-trigger" class="drop bg-gray">
-    <p>This drop have been triggered by <b>an anchor</b></p>
+    <p>This drop has been triggered by <b>an anchor</b></p>
 </div>
 ```
 
@@ -476,7 +476,7 @@ Let's see some 'core' examples:
     <button data-toggle="drop">Trigger drop within a group</button>
 
     <div class="drop bg-gray">
-        <p>This drop have been triggered within <b>a drop-group</b>, without being specifically targeted</p>
+        <p>This drop has been triggered within <b>a drop-group</b>, without being specifically targeted</p>
     </div>
 </div>
 ```
@@ -502,7 +502,7 @@ Both trigger and `.drop` elements has to be inside the same `.drop-group` contai
     <div data-toggle="drop">Trigger drop on hover</div>
 
     <div class="drop --trigger-hover bg-gray">
-        <p>This drop have been triggered by an hover event</p>
+        <p>This drop has been triggered by an hover event</p>
     </div>
 </div>
 ```
