@@ -76,3 +76,15 @@ Table of contents
 ### Scripted Notification: options
 <p data-height="320" data-theme-id="0" data-slug-hash="yovQyo" data-default-tab="js, result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Notification - Scripted - options" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/yovQyo/">Reveal Basis - Notification - Scripted - options</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+# Drop component
+
+`drop` component's purpose is to display a hidden element near the triggering element (eg. a dropdown menu).
+
+## Drop: Core
+<p data-height="320" data-theme-id="0" data-slug-hash="wqmymL" data-default-tab="result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Drop - Core" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/wqmymL/">Reveal Basis - Drop - Core</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+## Drop: Modifiers
+<p data-height="320" data-theme-id="0" data-slug-hash="xLWWry" data-default-tab="result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Drop - Modifiers" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/xLWWry/">Reveal Basis - Drop - Modifiers</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>

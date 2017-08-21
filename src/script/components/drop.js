@@ -53,14 +53,14 @@ function toggle(e) {
     }
 
     // toggle 'drop' element (unless it is a 'drop-hover' one)
-    if (drop && ! drop.classList.contains('drop-hover')) {
+    if (drop && ! drop.classList.contains('--trigger-hover')) {
         Drop.toggle(drop);
     }
 }
 
 function hover(e) {
     let dropGroup = e.target;
-    let dropHover = dropGroup.querySelector('.drop-hover');
+    let dropHover = dropGroup.querySelector('.--trigger-hover');
 
     if (dropHover) {
         Drop.toggle(dropHover);

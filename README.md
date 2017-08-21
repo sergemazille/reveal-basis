@@ -177,7 +177,6 @@ Let's see some 'core' examples (just wait for the 'modifier' section for funnier
 </div>
 ```
 
-
 #### Trigger an `.above` with an anchor, through a `[href]` attribute
 ```html
 <!-- this anchor tag will toggle an '.above' element which 'id' is 'targeted-above' -->
@@ -205,7 +204,7 @@ Let's see some 'core' examples (just wait for the 'modifier' section for funnier
 
 </div>
 ```
-[> Play with the examples](https://sergemazille.github.io/reveal-basis#core)
+[> Play with the examples](https://sergemazille.github.io/reveal-basis#above-core)
 
 ### Above: Modifiers
 Default `.above` behaviour can be extended by adding some modifier classes.
@@ -430,3 +429,75 @@ As its name implies, if dismissOnClick option is passed, the notification will b
 The library add a `dismiss` class on the notification. You can take advantage on this to add custom style to differentiate between dismissible notifications and non-dismissible ones.
 
 [> Play with the example](https://sergemazille.github.io/reveal-basis#scripted-notification-options)
+
+## Drop
+
+`drop` component's purpose is to display a hidden element near the triggering element (eg. a dropdown menu).
+
+### Drop: Usage
+
+Similarly to an `.above`, the triggering element (button, anchor, span or whatever) needs to contain `data-toggle="drop"` attribute.
+
+To hide back the `.drop` element, just click again on the trigger button or move your mouse outside a `.--trigger-hover` `.drop`'s trigger.
+
+Let's see some 'core' examples:
+
+#### Trigger a `.drop` with a button, through a `[data-target]` attribute
+```html
+<!-- button triggered drop -->
+<button data-toggle="drop" data-target="#button-trigger">Trigger drop with a button</button>
+
+<div id="button-trigger" class="drop bg-gray">
+    <p>This drop have been triggered by <b>a button</b></p>
+</div>
+```
+
+#### Trigger a `.drop` with an anchor, through a `[href]` attribute
+```html
+<!-- anchor triggered drop -->
+<a data-toggle="drop" href="#anchor-trigger">Trigger drop with an anchor</a>
+
+<div id="anchor-trigger" class="drop bg-gray">
+    <p>This drop have been triggered by <b>an anchor</b></p>
+</div>
+```
+
+#### Trigger a `.drop` with a button inside a `.drop-group` element
+```html
+<!-- trigger and '.drop' are enclosed in an '.drop-group' element, no need for a [data-target] or a [href] attributes here -->
+<div class="drop-group">
+
+    <button data-toggle="drop">Trigger drop within a group</button>
+
+    <div class="drop bg-gray">
+        <p>This drop have been triggered within <b>a drop-group</b>, without being specifically targeted</p>
+    </div>
+</div>
+```
+[> Play with the examples](https://sergemazille.github.io/reveal-basis#drop-core)
+
+#### Drop: Modifiers
+**`.--type-block`**
+
+By default, a `.drop` element will appear above the page's content. Adding the `.--type-block` modifier will get the element inside the content flow, as a block type would.
+
+`<div class="drop --type-block">Lorem ipsum...</div>`
+
+**`.--trigger-hover`**
+
+This option allow a `.drop` element to be triggered via an hover event on the trigger element.
+
+Both trigger and `.drop` elements has to be inside the same `.drop-group` container:
+
+```html
+<!-- drop is triggered by hovering the drop-group trigger element -->
+<div class="drop-group">
+
+    <div data-toggle="drop">Trigger drop on hover</div>
+
+    <div class="drop --trigger-hover bg-gray">
+        <p>This drop have been triggered by an hover event</p>
+    </div>
+</div>
+```
+[> Play with the examples](https://sergemazille.github.io/reveal-basis#drop-modifiers)
