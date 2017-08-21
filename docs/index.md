@@ -18,6 +18,9 @@ Table of contents
 		- [Transition: fade](#transition-fade)
 	- [Scripted Notification](#scripted-notification)
 		- [Scripted Notification: options](#scripted-notification-options)
+- [Drop component](#drop-component)
+	- [Drop: Core](#drop-core)
+	- [Drop: Modifiers](#drop-modifiers)
 
 <!-- /TOC -->
 

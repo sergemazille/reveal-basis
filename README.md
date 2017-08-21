@@ -45,6 +45,12 @@ Table of Content
 				- [Static notifications: modifiers](#static-notifications-modifiers)
 			- [Scripted notifications](#scripted-notifications)
 				- [Notification options](#notification-options)
+	- [Drop](#drop)
+		- [Drop: Usage](#drop-usage)
+			- [Trigger a `.drop` with a button, through a `[data-target]` attribute](#trigger-a-drop-with-a-button-through-a-data-target-attribute)
+			- [Trigger a `.drop` with an anchor, through a `[href]` attribute](#trigger-a-drop-with-an-anchor-through-a-href-attribute)
+			- [Trigger a `.drop` with a button inside a `.drop-group` element](#trigger-a-drop-with-a-button-inside-a-drop-group-element)
+			- [Drop: Modifiers](#drop-modifiers)
 
 <!-- /TOC -->
 
