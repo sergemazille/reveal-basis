@@ -91,3 +91,7 @@ Table of contents
 ## Drop: Modifiers
 <p data-height="320" data-theme-id="0" data-slug-hash="xLWWry" data-default-tab="result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Drop - Modifiers" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/xLWWry/">Reveal Basis - Drop - Modifiers</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+# Overlay component
+<p data-height="320" data-theme-id="0" data-slug-hash="qXogbr" data-default-tab="result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Overlay" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/qXogbr/">Reveal Basis - Overlay</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
