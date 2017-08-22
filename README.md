@@ -50,7 +50,15 @@ Table of Content
 			- [Trigger a `.drop` with a button, through a `[data-target]` attribute](#trigger-a-drop-with-a-button-through-a-data-target-attribute)
 			- [Trigger a `.drop` with an anchor, through a `[href]` attribute](#trigger-a-drop-with-an-anchor-through-a-href-attribute)
 			- [Trigger a `.drop` with a button inside a `.drop-group` element](#trigger-a-drop-with-a-button-inside-a-drop-group-element)
-			- [Drop: Modifiers](#drop-modifiers)
+		- [Drop: Modifiers](#drop-modifiers)
+	- [Overlay](#overlay)
+		- [Overlay: Usage](#overlay-usage)
+			- [Overlay: access via es6 modules](#overlay-access-via-es6-modules)
+			- [Overlay: access via `rb` global variable](#overlay-access-via-rb-global-variable)
+			- [Overlay: API](#overlay-api)
+				- [Overlay: show()](#overlay-show)
+				- [Overlay: hide()](#overlay-hide)
+				- [Overlay: lock()](#overlay-lock)
 
 <!-- /TOC -->
 
@@ -569,4 +577,4 @@ It is the default behaviour of an `Above`'s `Overlay` when the option `--lock-ov
 
 By default it will use a 'not-allowed' icon cursor on mouse hovering, but you can take advantage of this class, eg. you can't dismiss an `.above` element if the `#overlay` is locked.
 
-[> Play with the examples](https://sergemazille.github.io/reveal-basis#overlay)
+[> Play with the examples](https://sergemazille.github.io/reveal-basis#overlay-component)

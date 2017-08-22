@@ -21,6 +21,7 @@ Table of contents
 - [Drop component](#drop-component)
 	- [Drop: Core](#drop-core)
 	- [Drop: Modifiers](#drop-modifiers)
+- [Overlay component](#overlay-component)
 
 <!-- /TOC -->
 
