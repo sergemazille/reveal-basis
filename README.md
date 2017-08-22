@@ -64,6 +64,7 @@ As you would do with a lot of other libraries, you can install it by inserting a
 
 Copy the `reveal-basis.min.js` and the `reveal-basis.css` files (both found in the [`dist` folder](https://github.com/sergemazille/reveal-basis/tree/master/dist)) into your own project structure (eg. `lib/js/reveal-basis.min.js`) and insert them into your page template:
 ```html
+<!-- index.html -->
 <head>
     [...]
     <link rel="stylesheet" href="lib/css/reveal-basis.css">
@@ -109,7 +110,6 @@ reveal.notification.create({
     message: "Hello World!",
     duration: 3000 // in milliseconds
 });
-
 ```
 
 ### Override default styles
@@ -482,7 +482,7 @@ Let's see some 'core' examples:
 ```
 [> Play with the examples](https://sergemazille.github.io/reveal-basis#drop-core)
 
-#### Drop: Modifiers
+### Drop: Modifiers
 **`.--type-block`**
 
 By default, a `.drop` element will appear above the page's content. Adding the `.--type-block` modifier will get the element inside the content flow, as a block type would.
@@ -507,3 +507,66 @@ Both trigger and `.drop` elements has to be inside the same `.drop-group` contai
 </div>
 ```
 [> Play with the examples](https://sergemazille.github.io/reveal-basis#drop-modifiers)
+
+## Overlay
+
+On page load, Reveal Basis creates and appends an `#overlay` element on the DOM.
+
+This `#overlay` is used for `Above` and `Spinner` components but is also available in your own code if you need it.
+
+### Overlay: Usage
+
+#### Overlay: access via es6 modules
+
+If you have installed Reveal Basis via NPM, you can access the component by importing the library and creating a new instance of the `overlay`:
+```typescript
+// script.js
+import * as reveal from 'reveal-basis';
+
+let overlay = new reveal.overlay();
+```
+#### Overlay: access via `rb` global variable
+
+As long as you have imported the library with a `<script>` tag before using it, you have access to its global `rb` variable:
+```html
+<!-- index.html -->
+<head>
+    <link rel="stylesheet" href="lib/css/reveal-basis.css">
+</head>
+
+<body>
+    [...]
+
+    <script src="lib/js/reveal-basis.min.js"></script>
+    
+    <script>
+        let overlay = new rb.overlay();
+    </script>
+</body>
+```
+
+#### Overlay: API
+
+Whether you import the library or you include it via a `<script>` tag, you have now access to its API:
+
+##### Overlay: show()
+
+Nothing really fancy here, the overlay will appear on screen:
+`overlay.show();`
+
+##### Overlay: hide()
+
+Hide the overlay:
+`overlay.hide();`
+
+##### Overlay: lock()
+
+You can add the `.is-locked` class to the overlay by calling `overlay.lock()` before showing it:
+`overlay.lock();`
+`overlay.show();`
+
+It is the default behaviour of an `Above`'s `Overlay` when the option `--lock-overlay` is used.
+
+By default it will use a 'not-allowed' icon cursor on mouse hovering, but you can take advantage of this class, eg. you can't dismiss an `.above` element if the `#overlay` is locked.
+
+[> Play with the examples](https://sergemazille.github.io/reveal-basis#overlay)
