@@ -32,7 +32,7 @@ export class Overlay {
         body.classList.add('is-locked');
 
         // overlay won't be clickable until 'transitionend' event
-        overlay.classList.add('is-locked');
+        overlay.classList.add('--cursor-locked');
 
         // display overlay
         overlay.classList.add('is-visible');
