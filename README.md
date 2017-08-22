@@ -55,10 +55,10 @@ Table of Content
 		- [Overlay: Usage](#overlay-usage)
 			- [Overlay: access via es6 modules](#overlay-access-via-es6-modules)
 			- [Overlay: access via `rb` global variable](#overlay-access-via-rb-global-variable)
-			- [Overlay: API](#overlay-api)
-				- [Overlay: show()](#overlay-show)
-				- [Overlay: hide()](#overlay-hide)
-				- [Overlay: lock()](#overlay-lock)
+		- [Overlay: API](#overlay-api)
+			- [Overlay: show()](#overlay-show)
+			- [Overlay: hide()](#overlay-hide)
+			- [Overlay: lock()](#overlay-lock)
 
 <!-- /TOC -->
 
@@ -553,21 +553,21 @@ As long as you have imported the library with a `<script>` tag before using it, 
 </body>
 ```
 
-#### Overlay: API
+### Overlay: API
 
 Whether you import the library or you include it via a `<script>` tag, you have now access to its API:
 
-##### Overlay: show()
+#### Overlay: show()
 
 Nothing really fancy here, the overlay will appear on screen:
 `overlay.show();`
 
-##### Overlay: hide()
+#### Overlay: hide()
 
 Hide the overlay:
 `overlay.hide();`
 
-##### Overlay: lock()
+#### Overlay: lock()
 
 You can add the `.is-locked` class to the overlay by calling `overlay.lock()` before showing it:
 `overlay.lock();`
