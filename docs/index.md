@@ -22,6 +22,7 @@ Table of contents
 	- [Drop: Core](#drop-core)
 	- [Drop: Modifiers](#drop-modifiers)
 - [Overlay component](#overlay-component)
+- [Spinner component](#spinner-component)
 
 <!-- /TOC -->
 
@@ -95,4 +96,8 @@ Table of contents
 
 # Overlay component
 <p data-height="320" data-theme-id="0" data-slug-hash="qXogbr" data-default-tab="result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Overlay" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/qXogbr/">Reveal Basis - Overlay</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+# Spinner component
+<p data-height="320" data-theme-id="0" data-slug-hash="OjZpJb" data-default-tab="result" data-user="sergemazille" data-embed-version="2" data-pen-title="Reveal Basis - Spinner" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/sergemazille/pen/OjZpJb/">Reveal Basis - Spinner</a> by Serge Mazille (<a href="https://codepen.io/sergemazille">@sergemazille</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>

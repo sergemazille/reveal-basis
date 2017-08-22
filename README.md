@@ -59,6 +59,13 @@ Table of Content
 			- [Overlay: show()](#overlay-show)
 			- [Overlay: hide()](#overlay-hide)
 			- [Overlay: lock()](#overlay-lock)
+	- [Spinner](#spinner)
+		- [Spinner: Usage](#spinner-usage)
+			- [Spinner: access via es6 modules](#spinner-access-via-es6-modules)
+			- [Spinner: access via `rb` global variable](#spinner-access-via-rb-global-variable)
+		- [Spinner: API](#spinner-api)
+			- [Spinner: show()](#spinner-show)
+			- [Spinner: hide()](#spinner-hide)
 
 <!-- /TOC -->
 
@@ -578,3 +585,57 @@ It is the default behaviour of an `Above`'s `Overlay` when the option `--lock-ov
 By default it will use a 'not-allowed' icon cursor on mouse hovering, but you can take advantage of this class, eg. you can't dismiss an `.above` element if the `#overlay` is locked.
 
 [> Play with the examples](https://sergemazille.github.io/reveal-basis#overlay-component)
+
+## Spinner
+
+On page load, Reveal Basis creates and appends a `#spinner` element on the DOM.
+
+`Spinner` is a utility component that can display a loading animation.
+
+Its usage is similar to `Overlay`'s one:
+
+### Spinner: Usage
+
+#### Spinner: access via es6 modules
+
+If you have installed Reveal Basis via NPM, you can access the component by importing the library and creating a new instance of the `Spinner`:
+```typescript
+// script.js
+import * as reveal from 'reveal-basis';
+
+let spinner = new reveal.spinner();
+```
+#### Spinner: access via `rb` global variable
+
+As long as you have imported the library with a `<script>` tag before using it, you have access to its global `rb` variable:
+```html
+<!-- index.html -->
+<head>
+    <link rel="stylesheet" href="lib/css/reveal-basis.css">
+</head>
+
+<body>
+    [...]
+
+    <script src="lib/js/reveal-basis.min.js"></script>
+
+    <script>
+        let spinner = new rb.spinner();
+    </script>
+</body>
+```
+### Spinner: API
+
+Whether you import the library or you include it via a `<script>` tag, you have now access to `Spinner`'s component API:
+
+#### Spinner: show()
+
+The `#spinner` element will simply appear on screen:
+`spinner.show();`
+
+#### Spinner: hide()
+
+And, I know you got it, the `#spinner` element will be hidden with:
+`spinner.hide();`
+
+[> Play with the examples](https://sergemazille.github.io/reveal-basis#spinner-component)
